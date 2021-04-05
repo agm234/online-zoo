@@ -161,6 +161,9 @@ body{
      
 
 }
+.slider_item:hover{
+    cursor: pointer;
+}
 .slider_item .gallery_pet_info{
     display: none;
 }
