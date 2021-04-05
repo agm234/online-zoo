@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer_header.css">
+    <title>Online-zoo</title>
+</head>
+
+<body>
+    <div class="wrapper_header">
+        <header>
+            <section class="logo">
+                <a href="index.html"><img class="logo_img" src="DESKTOP/header/logo/lightlogo.svg" alt="logo"></a>
+                <h1 class="logo_name">Online Zoo</h1>
+            </section>
+            <section class="nav">
+                <nav class="head_nav">
+                    <ul class="nav_list">
+                        <li class="nav_item header_active" id="about">
+                            <a class="nav_link " href="index.html">About</a>
+                        </li>
+
+                        <li class="nav_item" id="zoos">
+                            <a class="nav_link" href="zoos/panda.html">Zoos</a>
+                        </li>
+
+                        <li class="nav_item" id="map">
+                            <a class="nav_link" href="map/map.html">Map</a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a class="nav_link" href="#form">Contact Us</a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a class="nav_link"
+                                href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+            </section>
+            <section class="mode">
+                <div class="swith">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </div>
+            </section>
+        </header>
+    </div>
+    <main>
+        <div class="first_screen_wrapper">
+            <div class="first_screen">
+                <section class="animal_online">
+                    <h2>Watch your favorite animal online</h2>
+                </section>
+                <section class="watch_online">
+                    <form class="watch_online_animal" action="zoos/panda.html">
+                        <button class="btn"><img src="DESKTOP/main/main_btn/Frame 37watch.png" alt="watch"> watch
+                            online</button>
+                    </form>
+                </section>
+                <section class="gallery">
+                    <div class="slider">
+                        <div class="slider_item" id="eagle">
+                            <img class="slider_img" src="DESKTOP/main/slider_img/Rectangle 10eagle.png" alt="eagle">
+                        </div>
+                        <div class="slider_item active" id="panda">
+                            <img class="slider_img " src="DESKTOP/main/slider_img/Rectangle 14panda.png" alt="panda">
+                            <div class="gallery_pet_info">
+                                <p class="pet_about">
+                                    Panda’s name is Bei Bei. He is 2 years old. Bei Bei
+                                    is from China. He loves bamboos.
+                                </p>
+                                <div class="btns">
+                                    <button class="watch"><img src="DESKTOP/main/slider_pet/Group 16play.svg"
+                                            alt="play">watch
+                                        online</button>
+                                    <button class="pet_donate"><img src="DESKTOP/main/slider_pet/Group 17don.svg"
+                                            alt="donate">Donate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item" id="monkey">
+                            <img class="slider_img" src="DESKTOP/main/slider_img/Rectangle 11monkey.png" alt="monkey">
+                        </div>
+                        <div class="slider_item" id="crocodile">
+                            <img class="slider_img" src="DESKTOP/main/slider_img/Rectangle 12crocodile.png"
+                                alt="crocodile">
+                        </div>
+                        <div class="slider_item" id="fox">
+                            <img class="slider_img" src="DESKTOP/main/slider_img/Rectangle 19fox.png" alt="fox">
+                        </div>
+                    </div>
+                    <img class="line" src="DESKTOP/main/slider_img/line.png" alt="line">
+                    <label class="input" for='slider_rang'>
+                        <div class="span">
+                            <span class="dots_pets_first"><span class="dots_pets">02/</span>08</span>
+                        </div>
+                        <input type="range" min='01' max='08' step="1" value="02" id='slider_rang'>
+                    </label>
+                </section>
+                <section class="social">
+                    <ul class="social_list">
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com">
+                                <img src="DESKTOP/main/social_net/instagram.png" alt="inst">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="https://twitter.com">
+                                <img src="DESKTOP/main/social_net/Grouptwitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="youtube" href="https://youtube.com">
+                                <img src="DESKTOP/main/social_net/Groupyoutube.png" alt="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="vk" href="https://vk.com.com">
+                                <img src="DESKTOP/main/social_net/Groupvk.png" alt="vk">
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="how_it_works_wrapper">
+            <div class="how_it_works">
+                <div class="works_wrapper">
+                    <section class='works_header'>
+                        <h3 id='works_header'>How it works?</h3>
+                    </section>
+                    <section class="works">
+                        <p>As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires
+                            on precious species and their habitat, and we are determined to assist in all aspects,
+                            including providing veterinary support and raising much-needed emergency funds.
+                            Zoo Online saves wildlife and inspires everyone to make conservation a priority in their
+                            lives. Animals have the right to a pain-free and happy life. They have equal claim to the
+                            resources of this planet, and deserve a life of dignity and compassion.As a voice for
+                            wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious
+                            species and their habitat.
+                        </p>
+                    </section>
+                    <section class="works_slider">
+                        <img class="works_slider_img" src="DESKTOP/main/slide_works/Rectangle 36.png" alt="slide">
+                        <label class="works_slider_input" for='slider_works_rang'>
+                            <div class="span">
+                                <span class="dots_pets_first"><span class="dots_pets">01/</span>04</span>
+                            </div>
+                            <input type="range" min='01' max='04' step="1" value="01" id='slider_works_rang'>
+                        </label>
+
+                    </section>
+                    <section class="watch_online_works">
+                        <button class="btn"><img src="DESKTOP/main/main_btn/Frame 37watch.png" alt="watch"> watch
+                            online</button>
+                    </section>
+                </div>
+            </div>
+            <div class="inspiring_us_wrapper">
+                <section class="inspiring_us">
+                    <ul class="inspiring_list">
+                        <li class="inspiring_item">
+                            <img class="inspiring_img" src="DESKTOP/main/inspiring_us/Group1.png" alt="group">
+                            <h4>What inspires us?</h4>
+                            <p>As a voice for wildlife, we are devastated by the impact of the 2020 Australian
+                                bushfires on precious species and their habitat, and we are determined to assist
+                                in all aspects.</p>
+                        </li>
+                        <li class="inspiring_item">
+                            <img class="inspiring_img" src="DESKTOP/main/inspiring_us/achievement 2.png"
+                                alt="achievement">
+                            <h4>Our mission</h4>
+                            <p>Zoo Online saves wildlife and inspires everyone to make conservation a priority in
+                                their lives.</p>
+                        </li>
+
+                        <li class="inspiring_item">
+                            <img class="inspiring_img" src="DESKTOP/main/inspiring_us/love 3.png" alt="love">
+                            <h4>What we believe in?</h4>
+                            <p>Animals have the right to a pain-free and happy life. They have equal claim to the
+                                resources of this planet, and deserve a life of dignity and compassion.</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="pets_in_zoo_wrapper_wrap">
+            <div class="pets_in_zoo">
+                <div class="pets_in_zoo_wrapper">
+                    <section class="pets_in_zoo_header">
+                        <h3>Pets in Zoo</h3>
+                    </section>
+                    <section class="pets_in_zoo_slider">
+                        <ul class="pets_list">
+                            <li class="pets_arrow">
+                                <img class="pets_arrow_img" id='left' src="DESKTOP/main/slider_pet/right-arrowleft.svg"
+                                    alt="left">
+                            </li>
+                            <div class="pet_wrapper">
+                                <li class="pets_item">
+                                    <div class="pet_info">
+                                        <p class="pet_about">
+                                            Panda’s name is Bei Bei. He is 2 years old. Bei Bei
+                                            is from China. He loves bamboos.
+                                        </p>
+                                        <div class="btns">
+                                            <button class="watch"><img src="DESKTOP/main/slider_pet/Group 16play.svg"
+                                                    alt="play">watch
+                                                online</button>
+                                            <button class="pet_donate"><img
+                                                    src="DESKTOP/main/slider_pet/Group 17don.svg"
+                                                    alt="donate">Donate</button>
+                                        </div>
+                                    </div>
+                                    <img class="pets_img" src="DESKTOP/main/slider_pet/Rectangle 14panda.png"
+                                        alt="panda">
+                                </li>
+                                <li class="pets_item">
+                                    <div class="pet_info">
+                                        <p class="pet_about">
+                                            Panda’s name is Bei Bei. He is 2 years old. Bei Bei
+                                            is from China. He loves bamboos.
+                                        </p>
+                                        <div class="btns">
+                                            <button class="watch"><img src="DESKTOP/main/slider_pet/Group 16play.svg"
+                                                    alt="play">watch
+                                                online</button>
+                                            <button class="pet_donate"><img
+                                                    src="DESKTOP/main/slider_pet/Group 17don.svg"
+                                                    alt="donate">Donate</button>
+                                        </div>
+                                    </div>
+                                    <img class="pets_img" src="DESKTOP/main/slider_pet/Rectangle 10eagle.png"
+                                        alt="eagle">
+                                </li>
+                                <li class="pets_item">
+                                    <div class="pet_info">
+                                        <p class="pet_about">
+                                            Panda’s name is Bei Bei. He is 2 years old. Bei Bei
+                                            is from China. He loves bamboos.
+                                        </p>
+                                        <div class="btns">
+                                            <button class="watch"><img src="DESKTOP/main/slider_pet/Group 16play.svg"
+                                                    alt="play">watch
+                                                online</button>
+                                            <button class="pet_donate"><img
+                                                    src="DESKTOP/main/slider_pet/Group 17don.svg"
+                                                    alt="donate">Donate</button>
+                                        </div>
+                                    </div>
+                                    <img class="pets_img" src="DESKTOP/main/slider_pet/Rectangle 11monkey.png"
+                                        alt="monkey">
+                                </li>
+                                <li class="pets_item">
+                                    <div class="pet_info">
+                                        <p class="pet_about">
+                                            Panda’s name is Bei Bei. He is 2 years old. Bei Bei
+                                            is from China. He loves bamboos.
+                                        </p>
+                                        <div class="btns">
+                                            <button class="watch"><img src="DESKTOP/main/slider_pet/Group 16play.svg"
+                                                    alt="play">watch
+                                                online</button>
+                                            <button class="pet_donate"><img
+                                                    src="DESKTOP/main/slider_pet/Group 17don.svg"
+                                                    alt="donate">Donate</button>
+                                        </div>
+                                    </div>
+                                    <img class="pets_img" src="DESKTOP/main/slider_pet/Rectangle 12crocodile.png"
+                                        alt="crocodile">
+                                </li>
+                            </div>
+                            <li class="pets_arrow">
+                                <img class="pets_arrow_img" id='right'
+                                    src="DESKTOP/main/slider_pet/right-arrowright.svg" alt="right">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="pets_input">
+                        <label class="input_pets" for='slider_pets'>
+                            <div class="span">
+                                <span class="dots_pets_first"><span class="dots_pets">01/</span>08</span>
+                            </div>
+                            <input type="range" min='01' max='08' step="1" value="01" id='slider_pets'>
+                        </label>
+                    </section>
+                    <section class="pets_online">
+                        <form action="map.html" class="choose_your_favorite">
+                            <button class="btn">Choose your favorite</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="pay_and_feed_wrapper_wrap">
+            <div class="pay_and_feed">
+                <div class="pay_and_feed_wrapper">
+                    <section class="pay_and_feed_header">
+                        <h3>Pay and feed</h3>
+                    </section>
+                    <section class="donate">
+                        <p>The opportunity to easily and naturally
+                            (but as often as possible) donate to the needs of animals that you like.</p>
+                    </section>
+                    <section class="pay_and_feed_diagram">
+                        <ul class="diagram_list">
+                            <li class="diagram_item">
+                                <img class="diagram_img" src="DESKTOP/main/pay_and_feed/light1.png" alt="1">
+                            </li>
+                            <li class="diagram_arrow_item">
+                                <img class="diagram_arrow" src="DESKTOP/main/pay_and_feed/Arrow3.png" alt="arrow">
+                            </li>
+                            <li class="diagram_item">
+                                <img class="diagram_img" src="DESKTOP/main/pay_and_feed/light2.png" alt="2">
+                            </li>
+                            <li class="diagram_arrow_item">
+                                <img class="diagram_arrow" src="DESKTOP/main/pay_and_feed/Arrow3.png" alt="arrow">
+                            </li>
+                            <li class="diagram_item">
+                                <img class="diagram_img" src="DESKTOP/main/pay_and_feed/light3.png" alt="3">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="donate_btn">
+                        <button class="btn">Donate</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials_wrapper_wrap">
+            <div class="testimonials">
+                <div class="testimonials_wrapper">
+                    <section class="testimonials_header">
+                        <h3>Testimonials</h3>
+                    </section>
+                    <section class="testimonials_slider">
+                        <ul class="testimonials_list">
+                            <li class="testimonials_item_arrow">
+                                <img src="DESKTOP/main/testimonials_slider/left-arrow.png" alt="arrow">
+                            </li>
+                            <div class="testimonials_item_wrapper">
+                                <li class="testimonials_item">
+                                    <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 46.png"
+                                        alt="nastya">
+                                    <h4>Nastya Sidorova</h4>
+                                    <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                        Australian bushfires on precious species and their habitat.
+                                    </p>
+                                </li>
+                                <li class="testimonials_item">
+                                    <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 462.png"
+                                        alt="vlad">
+                                    <h4>Vlad Kim</h4>
+                                    <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                        Australian bushfires on precious species and their habitat.
+                                    </p>
+                                </li>
+                            </div>
+                            <li class="testimonials_item_arrow">
+                                <img src="DESKTOP/main/testimonials_slider/right-arrow2.png" alt="arrow">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="testimonials_input">
+                        <label class="input_testimonials" for='slider_testimonials'>
+                            <div class="span">
+                                <span class="dots_pets_first"><span class="dots_pets">01/</span>08</span>
+                            </div>
+                            <input type="range" min='01' max='08' step="1" value="01" id='slider_testimonials'>
+                        </label>
+                    </section>
+                    <section class="testimonials_btn">
+                        <button class="btn">Leave feedback</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="map_wrapper_wrap">
+            <div class="block_map">
+                <div class="map_wrapper">
+                    <section class="map_header">
+                        <h3>Map</h3>
+                    </section>
+                    <section class="map_and_animals">
+                        <div class="map">
+                            <img class="map_img" src="DESKTOP/main/map/Groupmap.svg" alt="map">
+                            <div class="animal">
+                                <img class="animal_img" id="panda_map" src="DESKTOP/main/map/panda.svg" alt="panda">
+                                <div class="animal_about" id="map_panda">
+                                    <img src="DESKTOP/main/map/picture_activepanda2.png" alt=" panda">
+                                    <div class=" about">
+                                        <h5>Panda</h5>
+                                        <p><span class="span_head">Region:</span><span> Temperate forests
+                                                of southwest China</span>
+                                        </p>
+                                        <p><span class="span_head">Population:</span><span> About 1,590
+                                                individuals</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animal">
+                                <img class="animal_img" id="eagle_map" src="DESKTOP/main/map/eagle.svg" alt="eagle">
+                                <div class="animal_about" id="map_eagle">
+                                    <img src="DESKTOP/main/map/animal_about/Ellipse 46.png" alt="eagle">
+                                    <div class="about">
+                                        <h5>West End Bald Eagle</h5>
+                                        <p><span class="span_head">Region:</span><span> on an island near Los
+                                                Angeles</span>
+                                        </p>
+                                        <p><span class="span_head">Population:</span><span> more than 270 pairs in
+                                                2013</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animal">
+                                <img class="animal_img" id="crocodile_map" src="DESKTOP/main/map/marker.svg"
+                                    alt="crocodile">
+                                <img class="animal_img_animal_croco" src="DESKTOP/main/map/crocodile_png.png"
+                                    alt="crocodile">
+                                <div class="animal_about" id="map_crocodile">
+                                    <img src="DESKTOP/main/map/crocodile_png.png" alt="crocodile" alt="crocodile">
+                                    <div class="about">
+                                        <h5>Alligator</h5>
+                                        <p><span class="span_head">Region:</span><span> Alligators can be found in
+                                                slow-moving rivers</span>
+                                        </p>
+                                        <p><span class="span_head">Population:</span><span> Roughly 1.25 million</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animal">
+                                <img class="animal_img" id="monkey_map" src="DESKTOP/main/map/marker.svg" alt="monkey">
+                                <img class="animal_img_animal" src="DESKTOP/main/map/monkey_png.png" alt="monkey">
+
+                                <div class="animal_about" id="map_monkey">
+                                    <img src="DESKTOP/main/map/monkey_png.png" alt="monkey">
+                                    <div class="about">
+                                        <h5>Gorilla</h5>
+                                        <p><span class="span_head">Region:</span><span>
+                                                Tropical forest habitats.</span>
+                                        </p>
+                                        <p><span class="span_head">Population:</span><span> Over 100,000 western lowland
+                                                gorillas</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="map_btn">
+                        <form action="zoos/panda.html">
+                            <button class="btn"><img src="DESKTOP/main/main_btn/Frame 37watch.png" alt="watch"> watch
+                                online</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="footer_wrapper_wrap">
+        <footer class="footer">
+            <div class="footer_wrapper">
+                <section class="footer_head">
+                    <div class="footer_logo">
+                        <a href="index.html"><img src="DESKTOP/footer/logo/lightlogo.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer_nav">
+                        <ul class="footer_nav_list">
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link" href="index.html">About</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link" href="zoos/panda.html">Zoos</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link" href="map/map.html">Map</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link"
+                                    href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_btn">
+                        <button class="button">donate for volunteers</button>
+                    </div>
+                </section>
+                <section class="main">
+                    <form class="contact_us" id="form">
+                        <section class="contact_us_header">
+                            <h3>Contact us</h3>
+                        </section>
+                        <section class="name">
+                            <input type="text" placeholder="Name" required>
+                        </section>
+                        <section class="email">
+                            <input type="email" placeholder="Email" required>
+                        </section>
+                        <section class="text">
+                            <fieldset>
+                                <legend>Please enter your message</legend>
+                                <textarea name="messege" id="text" cols="30" rows="10" maxlength="280" required>
+
+                                </textarea>
+                            </fieldset>
+                        </section>
+                        <section class="agree">
+                            <input type="checkbox" aria-label="" required> <label>I agree to the processing of Personal
+                                Data</label>
+                        </section>
+                        <section class="btn_sunmit">
+                            <button type="submit" required> Send <img src="DESKTOP/footer/Btn/Arrow 4.svg" alt="arrow">
+                            </button>
+                        </section>
+                    </form>
+                    <div class="zoo_online_center">
+                        <section class="zoo_online_center_header">
+                            <h3>ZOO Online Centre</h3>
+                        </section>
+                        <section class="open_day">
+                            <p>132, Address District, Street</p>
+                            <p>Open Daily 10:00 am - 5:00 pm</p>
+                        </section>
+                        <section class="info">
+                            <p>T<a href="tel:(702) 163-3433">(702) 163-3433</a></p>
+                            <p><a href="mailto:zoo.online@gmail.com">zoo.online@gmail.com</a></p>
+                        </section>
+                        <section class="footer_social">
+                            <ul class="footer_social_list">
+                                <li class="footer_social_item">
+                                    <a href="https://www.instagram.com">
+                                        <img src="DESKTOP/main/social_net/instagram.png" alt="inst">
+                                    </a>
+                                </li>
+                                <li class="footer_social_item">
+                                    <a href="https://twitter.com">
+                                        <img src="DESKTOP/main/social_net/Grouptwitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="footer_social_item">
+                                    <a href="https://vk.com.com">
+                                        <img src="DESKTOP/main/social_net/Groupvk.png" alt="vk">
+                                    </a>
+                                </li>
+                                <li class="footer_social_item">
+                                    <a href="https://youtube.com">
+                                        <img src="DESKTOP/main/social_net/Groupyoutube.png" alt="youtube">
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+                <section class="footer_footer">
+                    <div class="footer_line">
+                        <hr>
+                    </div>
+                    <div class="copyrigh">
+                        <p>©Noora Sagnayeva</p>
+                        <p>©RSSchool and ©Yem Digital - 2021</p>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

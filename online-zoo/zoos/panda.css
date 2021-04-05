@@ -1,0 +1,202 @@
+*{
+    padding:0;
+    margin: 0;
+}
+main{
+    background-size: cover;
+}
+.main_wrapper_wrap{
+    width: 1920px;
+    height: 1359px;
+    margin: 0 auto;
+}
+.wrapper_header{
+    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+}
+main{
+    height: 1359px;
+}
+.main_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.sidebar{
+    width: 209px;
+    height: 627px;
+    padding-top: 60px;
+    position: sticky;
+    top: 0;
+    margin-right: 151px;
+}
+.slider_item{
+    display: flex;
+    align-items: center;
+}
+.slider_img{
+    width: 108px;
+    height: 108px;
+    position: relative;
+}
+.pet_active {
+    width: 157px;
+    height: 157px;
+}
+.pet_active .gradient{
+    display: initial;
+}
+.pet_active .slider_img{
+    position: absolute;
+    width: 137px;
+    height: 137px;
+    left: 35px;
+}
+.gradient{
+    width: 157px;
+    height: 157px;
+    position: absolute;
+    left: 25px;
+    display: none;
+    
+}
+.slider_list{
+    width: 209px;
+    height: 597px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sider_pets{
+    width: 100%;
+    height: 511px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.arroy_img{
+    width: 23px;
+    height: 23px;
+}
+
+.zoo_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 790px;
+    height: 654px;
+}
+.main_info{
+    width: 380px;
+    height: 209px;
+    margin-right: 360px;
+}
+.main_info p {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4F4F4F;
+
+}
+.main_info h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+    margin-bottom: 7px;
+}
+.info_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 35px;
+}
+.zoo_wrapper h3{
+    width: 883px;
+    height: 56px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    color: #333333;
+}
+.zoo_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+.feed_btn{
+    width: 194px;
+    height: 55px;
+}
+button:focus {
+    outline: none;
+}
+.feed_btn button:hover{
+    cursor: pointer;
+    background: linear-gradient(900.89deg, #0be9aa -14.32%, #07c7d4 892.68%); ;
+}
+.slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 141px;
+}
+.previe{
+    width: 246px;
+    height: 100%;
+}
+.dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 37px;
+    height: 11px;
+    margin: 0 auto;
+    align-items: center;
+}
+.dots span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #C4C4C4;
+}
+.dot:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+#dot_active{
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+}
+.slider_img{
+    cursor: pointer;
+}

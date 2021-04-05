@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="../footer_header.css">
+    <title>Map</title>
+</head>
+
+<body>
+    <div class="wrapper_header">
+        <header>
+            <section class="logo">
+                <a href="../index.html"><img class="logo_img" src="../DESKTOP/header/logo/lightlogo.svg" alt="logo"></a>
+                <h1 class="logo_name">Online Zoo</h1>
+            </section>
+            <section class="nav">
+                <nav class="head_nav">
+                    <ul class="nav_list">
+                        <li class="nav_item " id="about">
+                            <a class="nav_link " href="../index.html">About</a>
+                        </li>
+
+                        <li class="nav_item" id="zoos">
+                            <a class="nav_link" href="../zoos/panda.html">Zoos</a>
+                        </li>
+
+                        <li class="nav_item header_active" id="map">
+                            <a class="nav_link" href="../map.html">Map</a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a class="nav_link" href="#form">Contact Us</a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a class="nav_link"
+                                href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+            </section>
+            <section class="mode">
+                <div class="swith">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </div>
+            </section>
+        </header>
+    </div>
+    <main>
+        <div class="main_wrapper">
+            <div class="main_header">
+                <h3>Choose your favorite</h3>
+            </div>
+            <div class="main_text">
+                <p>
+                    As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires
+                    on precious species and their habitat, and we are determined to assist in all aspects,
+                    including providing veterinary support and raising much-needed emergency funds. Zoo Online
+                    saves wildlife and inspires everyone to make conservation a priority in their lives.
+                    Animals have the right to a pain-free and happy life. They have equal claim to the resources
+                    of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are
+                    devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                </p>
+            </div>
+            <div class="slider">
+                <section class="pets_slider">
+                    <ul class="pets_slider_list">
+                        <li class="pets_slider_item">
+                            <img class="arroy_img" src="../DESKTOP/IntermediatePage/right-arrowleft.png" alt="arrow">
+                        </li>
+                        <div class="pets_sider_pets">
+                            <li class="pets_slider_item">
+                                <img class="pets_slider_img" src="../DESKTOP/IntermediatePage/Ellipse 53monkey.png"
+                                    alt="monkey">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                            <li class="pets_slider_item pet_active">
+                                <img class="pets_slider_img" id="panda"
+                                    src="../DESKTOP/IntermediatePage/Ellipse 46panda.png" alt="panda">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                            <li class="pets_slider_item ">
+                                <img class="pets_slider_img" src="../DESKTOP/IntermediatePage/Ellipse 58crocodile.png"
+                                    alt="crocodile">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                            <li class="pets_slider_item">
+                                <img class="pets_slider_img" src="../DESKTOP/IntermediatePage/Ellipse 55eagle.png"
+                                    alt="eagle">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                            <li class="pets_slider_item">
+                                <img class="pets_slider_img" src="../DESKTOP/IntermediatePage/Ellipse 57tiger.png"
+                                    alt="tiger">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                            <li class="pets_slider_item">
+                                <img class="pets_slider_img" src="../DESKTOP/IntermediatePage/Ellipse 54elephant.png"
+                                    alt="elephant">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                            <li class="pets_slider_item">
+                                <img class="pets_slider_img" src="../DESKTOP/IntermediatePage/Ellipse 56lion.png"
+                                    alt="lion">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                            <li class="pets_slider_item">
+                                <img class="pets_slider_img" src="../DESKTOP/IntermediatePage/Ellipse 59zebra.png"
+                                    alt="zebra">
+                                <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png" alt="">
+                            </li>
+                        </div>
+                        <li class="pets_slider_item">
+                            <img class="arroy_img" src="../DESKTOP/IntermediatePage/right-arrow.png" alt="arrow">
+                        </li>
+                    </ul>
+                </section>
+                <section class="pets_input">
+                    <label class="input_pets" for='slider_pets'>
+                        <div class="span">
+                            <span class="dots_pets_first"><span class="dots_pets">02/</span>08</span>
+                        </div>
+                        <input type="range" min='01' max='08' step="1" value="02" id='slider_pets'>
+                    </label>
+                </section>
+            </div>
+            <div class="map">
+                <img class="map_img" src="../DESKTOP/main/map/Groupmap.svg" alt="map">
+                <img class="animal_img" id="panda_map" src="../DESKTOP/main/map/panda_active.svg" alt="panda"
+                    title="Панда">
+                <img class="animal_img" id="eagle_map" src="../DESKTOP/main/map/placeholder 2eagle.png" alt="eagle"
+                    title="Орел">
+                <img class="animal_img" id="crocodile_map" src="../DESKTOP/main/map/placeholder 3crocodile.png"
+                    alt="crocodile" title="Крокодил">
+                <img class="animal_img" id="monkey_map" src="../DESKTOP/main/map/placeholder 4monkey.png" alt="monkey"
+                    title="Горилла">
+            </div>
+            <div class="main_button">
+                <form action="zoos/panda.html" class="form">
+                    <button class="btn"><img src="../DESKTOP/main/main_btn/Frame 37watch.png" alt="watch"> watch
+                        online</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <div class="footer_wrapper_wrap">
+        <footer class="footer">
+            <div class="footer_wrapper">
+                <section class="footer_head">
+                    <div class="footer_logo">
+                        <a href="../index.html"><img src="../DESKTOP/footer/logo/lightlogo.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer_nav">
+                        <ul class="footer_nav_list">
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link" href="../index.html">About</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link" href="../zoos/panda.html">Zoos</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link" href="map.html">Map</a>
+                            </li>
+                            <li class="footer_nav_item">
+                                <a class="footer_nav_link"
+                                    href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_btn">
+                        <button class="button">donate for volunteers</button>
+                    </div>
+                </section>
+                <section class="main">
+                    <form class="contact_us" id="form">
+                        <section class="contact_us_header">
+                            <h3>Contact us</h3>
+                        </section>
+                        <section class="name">
+                            <input type="text" placeholder="Name" required>
+                        </section>
+                        <section class="email">
+                            <input type="email" placeholder="Email" required>
+                        </section>
+                        <section class="text">
+                            <fieldset>
+                                <legend>Please enter your message</legend>
+                                <textarea name="messege" id="text" cols="30" rows="10" maxlength="280" required>
+
+                                </textarea>
+                            </fieldset>
+                        </section>
+                        <section class="agree">
+                            <input type="checkbox" aria-label="" required> <label>I agree to the processing of Personal
+                                Data</label>
+                        </section>
+                        <section class="btn_sunmit">
+                            <button type="submit" required> Send <img src="../DESKTOP/footer/Btn/Arrow 4.svg"
+                                    alt="arrow">
+                            </button>
+                        </section>
+                    </form>
+                    <div class="zoo_online_center">
+                        <section class="zoo_online_center_header">
+                            <h3>ZOO Online Centre</h3>
+                        </section>
+                        <section class="open_day">
+                            <p>132, Address District, Street</p>
+                            <p>Open Daily 10:00 am - 5:00 pm</p>
+                        </section>
+                        <section class="info">
+                            <p>T<a href="tel:(702) 163-3433">(702) 163-3433</a></p>
+                            <p><a href="mailto:zoo.online@gmail.com">zoo.online@gmail.com</a></p>
+                        </section>
+                        <section class="footer_social">
+                            <ul class="footer_social_list">
+                                <li class="footer_social_item">
+                                    <a href="https://www.instagram.com">
+                                        <img src="../DESKTOP/main/social_net/instagram.png" alt="inst">
+                                    </a>
+                                </li>
+                                <li class="footer_social_item">
+                                    <a href="https://twitter.com">
+                                        <img src="../DESKTOP/main/social_net/Grouptwitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="footer_social_item">
+                                    <a href="https://vk.com.com">
+                                        <img src="../DESKTOP/main/social_net/Groupvk.png" alt="vk">
+                                    </a>
+                                </li>
+                                <li class="footer_social_item">
+                                    <a href="https://youtube.com">
+                                        <img src="../DESKTOP/main/social_net/Groupyoutube.png" alt="youtube">
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+                <section class="footer_footer">
+                    <div class="footer_line">
+                        <hr>
+                    </div>
+                    <div class="copyrigh">
+                        <p>©Noora Sagnayeva</p>
+                        <p>©RSSchool and ©Yem Digital - 2021</p>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
