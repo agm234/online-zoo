@@ -1,0 +1,521 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-size: cover;
+    height: 1287px;
+    
+}
+.main_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.main_header{
+    width: 720px;
+    height: 56px;
+    padding-left: 2px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #333333;
+}
+.main_text{
+    width: 790px;
+    height: 80px;
+    padding-left: 2px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+}
+.main_text p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+}
+ul{
+    list-style-type: none;
+}
+.slider{
+    width: 1199px;
+    height: 238px;
+    padding-left: 1px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.pets_slider{
+    width: 100%;
+    height: 157px;
+    margin-bottom: 32px;
+}
+.pets_slider_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pets_slider_item{
+    position: relative;
+}
+.pets_slider_item:hover{
+    cursor: pointer;
+}
+.gradient{
+    position:absolute;
+    top: -23px;
+    left: -25px;
+   display: none;
+}
+.pets_slider_img{
+    width: 100%;
+    height: 100%;
+}
+#panda{
+    width: 108px;
+    height: 108px;
+}
+.pet_active .gradient{
+    display: initial;
+}
+
+.pet_active .pets_slider_img{
+    transform: scale(1.28);
+    
+}
+.pets_sider_pets{
+    width: 1073px;
+    height: 157px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pets_input{
+    display: block;
+    width: 245px;
+    height: 49px;
+    padding-right: 34px;
+    margin: 0 auto;
+}
+.pets_input input[type=range] {
+    margin-top: 15px;
+    -webkit-appearance: none;
+    width: 245px;
+  }
+.pets_input input[type=range]:focus {
+    outline: none;
+  }
+.pets_input input[type=range]::-webkit-slider-runnable-track {
+    width: 245px;
+    height: 5px;
+    cursor: pointer;
+    background: rgba(189, 189, 189, 0.57);
+  }
+.pets_input input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 30px;
+    background: #333333;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+}
+.span{
+    width: 53px;
+    height: 28px;
+    margin:0 auto;
+}
+.dots_pets_first{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+
+}
+.dots_pets{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+
+
+.map{
+    width: 1200px;
+    height: 498px;
+    position: relative;
+    padding-left: 1px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+.map_img{
+    width: 100%;
+    height: 100%;
+}
+.animal_img{
+    position: absolute;
+    stroke: #49d6df;
+    fill: #49d6df;
+    transition: 0.3s;
+    height: 93.37px;
+    width: 93.36px;
+    z-index: 2;
+    
+}
+#panda_map{
+    background-image: url(../DESKTOP/main/map/picture_activepanda_png.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    left: 74.22%;
+    top: 19.77%;
+}
+#panda_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+#eagle_map{
+    background-image: url(../DESKTOP/main/map/Ellipse\ 46eagle_png.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    left: 9.92%;
+    top: 16.47%;
+}
+#eagle_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+#crocodile_map{
+    background-image: url(../DESKTOP/main/map/crocodile_png.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    left: 19.3%;
+    top: 20.59%;
+}
+#crocodile_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+#monkey_map{
+    background-image: url(../DESKTOP/main/map/monkey_png.png);
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    left: 46.53%;
+    top: 38.05%;
+}
+#monkey_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+.animal_img:hover{
+    cursor: pointer;
+   
+}
+.map_active{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+button:focus {
+    outline: none;
+}
+.main_button{
+    width: 245px;
+    height: 55px;
+    margin: 0 auto;
+    padding-left: 3px;
+    margin-bottom: 100px;
+}
+.form{
+    width: 100%;
+    height: 100%;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 0;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+@media (max-width:1200px){
+    main{
+        height: 1110px;
+    }
+    .map{
+        max-width: 800px;
+        height: 388px;
+        margin-bottom: 35px;
+    }
+    .map_and_animals{
+        max-width: 800px;
+        max-height: 436px;
+    }
+    .map_img{
+        max-width: 800px;
+        max-height: 436px;
+    }
+     #panda_map{
+        left: 71.56%;
+        top: 15.6%;
+    }
+    #eagle_map{
+        left: 8%;
+        top: 12.39%;
+    }
+    #crocodile_map{
+        left: 18%;
+        top: 15.37%;
+    }
+    #monkey_map{
+        left: 45.22%;
+        top: 35.32%;
+    }
+    .slider{
+        max-width: 800px; 
+        margin-bottom: 50px;
+    }
+    .pets_slider{
+        max-width: 800px;
+        margin-bottom: 25px;
+    }
+    .pets_slider_list{
+        max-width: 800px;
+    }
+    .pets_sider_pets_wrapper{
+        max-width: 659px;
+        overflow: hidden;
+    }
+    .pets_sider_pets{
+        width: 1073px;
+    }
+    .main_text{
+        margin-bottom: 35px;
+    }
+    .pets_input{
+        padding: 0;
+    }
+    .animal_img{
+        width: 83px;
+        height: 83px;
+    }
+}
+@media (max-width:900px){
+    main{
+        height: 1009px;
+    }
+    .map{
+        max-width: 600px;
+        max-height: 290px;
+    }
+    .map_and_animals{
+        max-width: 600px;
+        max-height: 290px;
+    }
+    .map_img{
+        max-width: 600px;
+        max-height: 290px;
+    }
+    #panda_map{
+        left: 69%;
+        top: 4.14%;
+    }
+     #eagle_map{
+       left: 6.67%;
+       top: 2.41%;
+    }
+     #crocodile_map{
+       left: 15%;
+       top: 5.52%;
+    }
+    #monkey_map{
+        left: 42.5%;
+       top: 23.79%;
+     }
+    .map_btn{
+        margin-bottom: 80px;
+     }
+    .animal_img{
+        width: 93px;
+        height: 93px;
+    }
+    .main_header{
+        width: 600px;
+        height: 56px;
+    }
+    .main_text{
+        width: 600px;
+        height: 112px;
+    }
+    .slider{
+        max-width: 600px; 
+        margin-bottom: 35px;
+    }
+    .pets_slider{
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+    .pets_sider_pets{
+        width:1050px;
+    }
+    .pets_slider_list{
+        max-width: 600px;
+    }
+    .pets_sider_pets_wrapper{
+        max-width: 522px;
+    }
+    .pet_active{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+@media (max-width:600px){
+    main{
+        height: 780px;
+    }
+    .map_and_animals{
+        max-width: 280px;
+        max-height: 146px;
+    }
+    .map_btn{
+        margin-bottom: 60px;
+    }
+    .map{
+        max-width: 280px; 
+        height: 146px;
+    }
+    .map_img{ 
+        width: 280px;
+        height: 146px;
+    }
+    #panda_map{
+        background-size: 22px 22px;
+        left: 73%;
+        top: 5%;
+    }
+     #eagle_map{
+        background-size: 22px 22px;
+        left: 7.33%;
+        top: 1.37%;
+    }
+     #crocodile_map{
+        background-size: 22px 22px;
+        left: 16.33%;
+        top: 6.85%;
+    }
+    #monkey_map{
+        background-size: 22px 22px;
+        left: 44.46%;
+        top: 24.77%;
+     }
+    .animal_img{
+        width: 34px;
+        height: 47px;
+    }
+    .main_header{
+        width: 280px;
+        height: 28px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    .main_header h3{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #333333;
+
+    }
+    .main_text{
+        width: 280px;
+        height: 182px;
+        margin-bottom: 0;
+    }
+    .main_text p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #4F4F4F;
+    }
+    .slider{
+        max-width: 280px; 
+        min-height: 164px;
+        margin-bottom: 28px;
+        margin-top: 40px;
+    }
+    .pets_slider{
+        max-width: 280px;
+        height: 87px;
+        margin-bottom: 18px;
+    }
+    .pets_sider_pets{
+        width:575px;
+        height: 87px;
+    }
+    .pets_slider_list{
+        max-width: 280px;
+        height: 87px;
+    }
+    .pets_sider_pets_wrapper{
+        max-width: 225px;
+    }
+    .pets_slider_img{
+        width: 60px;
+        height: 60px;
+    }
+    .gradient{
+        top: -4px;
+        left: -5px;
+        width: 85px;
+        height: 85px;
+    }
+    .pet_active .pets_slider_img{
+        transform: scale(1);
+        max-width: 75px;
+        max-height: 75px;
+    }
+    .pet_active{
+        margin:0;
+    }
+    .map_btn{
+        margin-bottom: 60px;
+     }
+    .pets_input{
+        padding-left: 25px;
+    }
+}

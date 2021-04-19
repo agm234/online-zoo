@@ -1,0 +1,1710 @@
+*{
+    padding:0;
+    margin: 0;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.first_screen_wrapper{
+    background: url(DESKTOP/main/first_screen_bacground/Rectangle\ 32bacground.png) no-repeat center;
+    background-size: cover;
+}
+.how_it_works_wrapper{
+    background-size: cover;
+}
+.inspiring_us_wrapper{
+    background: #F2F2F2;
+    background-size: cover;
+}
+.pets_in_zoo_wrapper_wrap{
+    background-size: cover;
+}
+.pay_and_feed_wrapper_wrap{
+    background: #F2F2F2;
+    background-size: cover;
+}
+.testimonials_wrapper_wrap{
+    background-size: cover;
+}
+.map_wrapper_wrap{
+    background: #F2F2F2;
+    background-size: cover;
+
+}
+
+
+
+/*       main                      */
+/*             first_screen                      */
+.first_screen{
+    position: relative;
+    max-width: 1920px;
+    height: 940px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.watch_online_animal{
+    width: 100%;
+    height: 100%;
+}
+.animal_online{
+    position: absolute;
+    width: 793px;
+    height: 208px;
+    left: 18.75%;
+    top: 21.91%;
+}
+.animal_online h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 88px;
+    line-height: 104px;
+    color: #FEFEFE;
+}
+.watch_online{
+    position: absolute;
+    width: 245px;
+    height: 55px;
+    left:18.75%;
+    top: 47.97%;
+} 
+ .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 0;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+ .btn img{
+    margin-right: 3px;
+    min-width: 32px;
+    min-height: 32px;
+}
+.social{
+    position: absolute;
+    width: 20px;
+    height: 107px;
+    left:7.91%;
+    top: 76.8%;
+}
+.social_list{
+    width:100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.instagram{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.twitter{
+    display: block;
+    width: 20px;
+    height: 16px;
+}
+.youtube{
+    display: block;
+    width: 20px;
+    height: 13px;
+}
+.vk{
+    display: block;
+    width: 20px;
+    height: 12px;
+}
+
+/*   first page slider                */
+
+.gallery{
+    position: absolute;
+    display: block;
+    width: 1124px;
+    height: 421px;
+    left: 43.75%;
+    top:43.19%;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1124px;
+    height: 352px;
+    padding-left: 135px;
+}
+.slider_item{
+    position: relative;
+    width: 140px;
+    height: 203px;
+    padding-top: 27px;
+    z-index : 1;
+     
+
+}
+.slider_item:hover{
+    cursor: pointer;
+}
+.slider_item .gallery_pet_info{
+    display: none;
+}
+.active .gallery_pet_info{
+    display:initial;
+}
+.active{
+    padding:0;
+    width: 245px;
+    height: 352px;
+}
+.slider_img{
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+    position: absolute;
+    width: 245px;
+    height: 49px;
+    top: 372px;
+    left: 321px;
+}
+
+.line{
+    position: absolute;
+    width: 1087px;
+    height: 13px;
+    top: 182px;
+    left: 0;
+    z-index : 0;
+}
+.dots{
+    margin-top: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FEFEFE;
+}
+.input input[type=range] {
+    margin-top: 15px;
+    -webkit-appearance: none;
+    width: 100%;
+  }
+.input input[type=range]:focus {
+    outline: none;
+  }
+.input input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #BDBDBD;
+  }
+ .input input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 30px;
+    background: #FEFEFE;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+   
+
+  }
+
+.gallery_pet_info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.gallery_pet_info .pet_about{
+    margin-top: 232px;
+}
+.gallery_pet_info .pet_donate{
+    margin-right: 25px;
+}
+.input .dots_pets_first{
+    color: #BDBDBD;
+
+}
+.input .dots_pets{
+color: #FEFEFE;
+}
+
+
+  /*      how_it_works                               */
+.how_it_works{
+    max-width: 1920px;
+    height: 883px;
+    margin: 0 auto;
+}
+.works_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 790px;
+    height: 883px;
+    margin: 0 auto;
+}
+
+.span{
+    width: 53px;
+    height: 28px;
+    margin:0 auto;
+}
+
+.works_header{
+    height: 56px;
+    padding-top: 100px;
+    
+}
+#works_header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+    color: #333333;
+}
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #333333;
+}
+.works{
+    max-width: 790px;
+    height: 80px;
+    margin: 0 auto;
+   
+    
+}
+.works p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.47px;
+    color: #4F4F4F;
+    width: 100%;
+    height:100%;
+}
+.works_slider{
+    width: 100%;
+    height: 401px;
+    margin: 0 auto;
+}
+.works_slider_img{
+    width: 100%;
+    height: 323px;
+}
+.dots_works{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    margin: 0 auto;
+}
+.works_slider input[type=range] {
+    margin-top: 11px;
+    -webkit-appearance: none;
+    width: 245px;
+  }
+.works_slider input[type=range]:focus {
+    outline: none;
+  }
+.works_slider input[type=range]::-webkit-slider-runnable-track {
+    width: 245px;
+    height: 5px;
+    cursor: pointer;
+    background: #BDBDBD;
+  }
+.works_slider input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 62px;
+    background: #333333;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+   
+
+}
+.watch_online_works{
+    width: 245px;
+    height: 55px;
+    margin: 0 auto;
+    padding-bottom: 101px;
+
+}
+.works_slider_input{
+    display: block;
+    width: 245px;
+    height: 49px;
+    margin: 0 auto;
+}
+
+/*        What's inspiring us?                 */
+
+.inspiring_us{
+    
+    max-width: 1920px;
+        height: 413px;
+        margin: 0 auto;
+   
+    
+}
+.inspiring_list{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+}
+.inspiring_item{
+    margin-top: 100px;
+    max-width: 380px;
+    
+}
+.inspiring_img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    
+}
+.inspiring_item h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #333333;
+}
+.inspiring_item p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+}
+/*                pets in zoo                         */
+.pets_in_zoo{
+    max-width: 1920px;
+    height: 854px;
+    margin: 0 auto;
+    
+}
+.pets_in_zoo_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pets_in_zoo_header{
+margin-bottom: 5px;
+margin-top: 100px;
+}
+.pets_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.pets_arrow{
+    align-self: center;
+}
+
+.pets_input input[type=range] {
+    margin-top: 15px;
+    -webkit-appearance: none;
+    width: 245px;
+  }
+.pets_input input[type=range]:focus {
+    outline: none;
+  }
+.pets_input input[type=range]::-webkit-slider-runnable-track {
+    width: 245px;
+    height: 5px;
+    cursor: pointer;
+    background: #BDBDBD;
+  }
+.pets_input input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 30px;
+    background: #333333;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+}
+.watch_online_works{
+    width: 245px;
+    height: 55px;
+    margin: 0 auto;
+    padding-bottom: 101px;
+
+}
+.works_slider_input{
+    display: block;
+    width: 245px;
+    height: 49px;
+    margin: 0 auto;
+    margin-top: 29px;
+}
+
+.pets_input{
+    display: block;
+    width: 245px;
+    height: 49px;
+    padding-left: 3px;
+    margin: 0 auto;
+}
+
+.pets_online{
+    width: 245px;
+    height: 55px;
+    margin: 0 auto;
+    padding-right: 3px;
+    margin-bottom: 100px;
+}
+.pets_arrow_img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.pets_img{
+    display: block;
+    max-width: 277px ;
+    max-height: 399px;
+}
+
+.pets_item:hover{
+    cursor: pointer;    
+}
+.pets_arrow:hover{
+    opacity: 0.8;
+    cursor: pointer;    
+}
+.choose_your_favorite{
+    width: 100%;
+    height: 100%;
+}
+.pet_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 100%;
+}
+.pets_item{
+    position: relative;
+    overflow: hidden;
+}
+.pet_info{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.pets_item:hover .pet_info{
+    opacity: 1;
+    top: 0;
+}
+.pet_about{
+    Width: 180px;
+    Height: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-top: 269px;
+    margin-left: 22px;
+    margin-bottom: 14px;
+}
+
+.watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4BD8B5;
+    background-color: transparent;
+    border: none;
+    margin-left: 22px;
+    
+}
+
+.pet_donate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    margin-right: 59px;
+}
+.watch:hover,
+.pet_donate:hover{
+    background: transparent;
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 24px;
+}
+.btns img{
+    text-align: center;
+    margin-right: 2px;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+/*         pay_and_feed                          */
+
+.pay_and_feed{
+    max-width: 1920px;
+    height: 754px;
+    margin: 0 auto;
+}
+.pay_and_feed_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.pay_and_feed_header{
+    margin-top: 100px;
+}
+.donate{
+    width: 790px;
+    height: 16px;
+    margin: 0 auto;
+}
+.donate p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #4F4F4F;
+}
+.diagram_list{
+    max-width: 1200px;
+    height: 245px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 4px;
+    margin: 0 auto;
+    margin-top: 62px;
+}
+.diagram_arrow_item{
+    align-self: center;
+}
+.diagram_img{
+    display: block;
+    width: 245px;
+    height: 245px;
+}
+.diagram_arrow{
+    display: block;
+    max-width: 107px;
+    
+
+}
+.donate_btn{
+    width: 245px;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+   margin-top: 30px;
+   padding-right: 4px;
+   margin-bottom: 100px;
+}
+
+
+/*              testimonials                         */
+
+.testimonials{
+    max-width: 1920px;
+    height: 810px;
+    margin: 0 auto;
+}
+.testimonials_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 100%;
+}
+.testimonials_header{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.testimonials_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    height: 340px;
+    padding-right: 2px;
+    margin: 0 auto;
+}
+.testimonials_item_slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1187px;
+    height: 100%;
+}
+
+.testimonials_item_arrow{
+
+    align-self: center;
+    /* margin-top: 20px; */
+    
+}
+.testimonials_item_arrow:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.testimonials_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 585px;
+    height: 310px;
+    background: #FEFEFE;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+    border-radius: 5px;  
+    
+}
+.testimonials_img{
+    display: block;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto;
+    margin-top: 47px;
+}
+.testimonials_item h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #333333;
+}
+.testimonials_item p{
+    width: 75%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+    padding-left: 1px ;
+    margin: 0 auto;
+    margin-bottom: 106px;
+}
+.testimonials_input input[type=range] {
+    margin-top: 15px;
+    -webkit-appearance: none;
+    width: 245px;
+  }
+.testimonials_input input[type=range]:focus {
+    outline: none;
+  }
+.testimonials_input input[type=range]::-webkit-slider-runnable-track {
+    width: 245px;
+    height: 5px;
+    cursor: pointer;
+    background: #BDBDBD;
+  }
+.testimonials_input input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 30px;
+    background: #333333;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+}
+.testimonials_input {
+    display: block;
+    width: 245px;
+    height: 49px;
+    padding-left: 3px;
+    margin: 0 auto;
+}
+.dots_testimonials{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.testimonials_btn{
+    width: 245px;
+    height: 55px;
+    margin: 0 auto;
+    padding-right: 1px;
+    margin-bottom: 100px;
+}
+
+/*           map               */
+.block_map{
+    max-width: 1920px;
+    height: 904px;
+    margin: 0 auto;
+    
+}
+.map_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.map_header{
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+.map_and_animals{
+    max-width: 1200px;
+    height: 498px;
+    margin: 0 auto;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 1px;
+    margin: 0;
+}
+.map_img{    
+    max-width: 1200px;
+    height: 498px;
+    z-index: 1;
+}
+.animal_img{
+    position: absolute;
+    stroke: #49d6df;
+    fill: #49d6df;
+    transition: 0.3s;
+    height: 93.37px;
+    width: 93.36px;
+    z-index: 2;
+}
+.map_btn{
+    width: 245px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.map_btn form{
+    width: 100%;
+    height: 100%;
+}
+.animal_about{
+    position: absolute;
+    z-index: 1;
+}
+#panda_map{
+    background-image: url(DESKTOP/main/map/picture_activepanda_png.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    left: 73.3%;
+    top: 18.2%;
+}
+#panda_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+#eagle_map{
+    background-image: url(DESKTOP/main/map/Ellipse\ 46eagle_png.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    left: 9%;
+    top: 14.89%;
+}
+#eagle_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+#crocodile_map{
+    background-image: url(DESKTOP/main/map/crocodile_png.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    left: 19.3%;
+    top: 20.59%;
+}
+#crocodile_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+#monkey_map{
+    background-image: url(DESKTOP/main/map/monkey_png.png);
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    left: 46.53%;
+    top: 38.05%;
+}
+#monkey_map:hover{
+    stroke: rgb(255, 51, 0);
+    fill: rgb(255, 51, 0);
+}
+#map_panda{
+   top: 10px;
+   left: 450px;
+}
+#map_eagle{
+    top: 200px;
+   left: 120px;
+}
+#map_crocodile{
+    top: 10px;
+   left: 320px;
+    
+}
+#map_monkey{
+    top: 280px;
+   left: 180px;
+}
+.animal_about{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 436px;
+    height: 149px;
+    background: #FEFEFE;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    border-radius: 8px;
+    display: none;
+}
+.animal_img:hover{
+    cursor: pointer;
+}
+
+.animal:hover .animal_about{
+    display:flex;
+    z-index: 3;
+}
+.animal_about img{
+    width: 65px;
+    height: 65px;
+    margin-left: 24px;
+    margin-top: 40px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 44px;
+    
+
+}
+.about h5{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 2px;
+}
+.about p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4F4F4F;
+
+}
+.span_head{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+.dots_pets_first{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+
+}
+.dots_pets{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+@media (max-width:1200px){
+    .block_map,
+    .testimonials,
+    .pay_and_feed,
+    .pets_in_zoo,
+    .inspiring_us,
+    .first_screen,
+    .how_it_works{
+        max-width: 1200px;
+    }
+    .first_screen{
+        max-height: 926px;
+    }
+    .animal_online{
+        left:12.5%;
+        top: 13.82%;
+    }
+    .watch_online{
+        left: 12.5%;
+        top: 40%;
+    }
+    .social{
+        left: 12.5%;
+        top: 80%;
+    }
+    .gallery{
+        width: 1220px;
+        left: 40%;
+        top: 46.65%;
+    }
+    .input{
+        left: 351px;
+        top: 377px;
+    }
+    .slider_item{
+        width: 180px;
+        height: 261px;
+        padding-top: 0;
+    }
+    .active{
+        width: 245px;
+        height: 352px;
+    }
+    .inspiring_list{
+        max-width: 900px;
+    }
+    .inspiring_item{
+        max-width: 286px;
+    }
+    .works_wrapper{
+        max-width: 746px;
+    }
+    .pets_in_zoo{
+        height: 752px;
+    }
+    .pets_list{
+        max-width: 1000px;
+    }
+    .pet_wrapper{
+        max-width: 900px;
+    }
+    .pets_img{
+        max-width: 210px;
+        max-height: 301px;
+    }
+    .pets_item .pet_about{
+        margin-top: 183px;
+        margin-left: 9px;
+    }
+    .pets_item .watch{
+        margin-left: 9px;
+    }
+    .pets_item .pet_donate{
+        margin-right: 7px;
+    }
+    .pay_and_feed{
+        max-height: 702px;
+    }
+    .diagram_list{
+        margin-top: 30px;
+    }
+    .donate p{
+        margin-top: 10px;
+    }
+    .diagram_arrow{
+        max-width: 48px;
+    }
+    .diagram_list{
+        max-width: 900px;
+    }
+    .testimonials_list{
+        width: 1000px;
+    }
+    .testimonials_item_slide{
+        width: 900px;
+    }
+    .testimonials_item{
+        width: 440px;
+    }
+    .testimonials_item p{
+        margin-bottom: 89px;
+    }
+    .block_map{
+        max-height: 842px;
+    }
+    .map_and_animals{
+        max-width: 900px;
+
+        max-height: 436px;
+    }
+    .map_img{
+        max-width: 900px;
+        max-height: 436px;
+    }
+    #map_panda{
+        top: 260px;
+        left: -40px;
+     }
+     #map_eagle{
+         top: 190px;
+        left: -60px;
+     }
+     #map_crocodile{
+        top: 200px;
+        left: -20px;
+         
+     }
+     #map_monkey{
+        top: 260px;
+        left: 10px;
+     }
+     #panda_map{
+        left: 71.56%;
+        top: 15.6%;
+    }
+    #eagle_map{
+        left: 8%;
+        top: 12.39%;
+    }
+    #crocodile_map{
+        left: 18%;
+        top: 15.37%;
+    }
+    #monkey_map{
+        left: 45.22%;
+        top: 35.32%;
+    }
+
+}
+@media (max-width:1000px){
+    .testimonials_list{
+        width: 1600px;
+    }
+    .testimonials_item_slide{
+        width: 1300px;
+    }
+    .testimonials_item{
+        width: 585px;
+        margin: 0 33px 0 28px;
+    }
+    .testimonials{
+        overflow: hidden;
+        max-height: 795px;
+    }
+    .testimonials_item_arrow{
+        display: none;
+    }
+}
+@media (max-width:900px){
+    .block_map,
+    .testimonials,
+    .pay_and_feed,
+    .pets_in_zoo,
+    .inspiring_us,
+    .first_screen,
+    .how_it_works{
+        max-width: 640px;
+    }
+    .slider{
+        max-width: 1085px;
+        padding-left: 71px;
+    }
+    
+    .first_screen{
+        max-height: 934px;
+    }
+    .animal_online{
+        max-width: 599px;
+        max-height: 150px;
+        left: 3.4375%;
+        top: 13%;
+    }
+    .animal_online h2{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 75px;
+        color: #FEFEFE;
+    }
+    .watch_online{
+        left: 3.4375%;
+        top: 32.33%;
+    }
+    .social{
+        left: 3.125%;
+        top: 77.73%;
+    }
+    .gallery{
+        max-width: 1220px;
+        left: 7.8125%;
+        top: 43.68%;
+    }
+    .input{
+        left: 23.4%;
+        top: 377px;
+    }
+    .slider_item{
+        width: 180px;
+        height: 261px;
+        padding-top: 0;
+    }
+    .active{
+        width: 245px;
+        height: 352px;
+    }
+    .how_it_works{
+        margin-left: 3.125%;
+        margin-right: 3.125%;
+    }
+    .works_wrapper{
+        max-width: 600px;
+    }
+    .watch_online_works{
+        padding-bottom: 68px;
+    }
+    .works{
+        height: 112px;
+    }
+    .inspiring_us{
+        height: 875px;
+    }
+    .inspiring_list{
+        height: 675px;
+        max-width: 287px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .inspiring_item{
+        margin-top: 0;
+    }
+    .pets_in_zoo{
+        height: 766px;
+        overflow: hidden;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .pet_wrapper{
+        max-width:900px;
+    }
+    .pets_arrow{
+        display: none;
+    }
+    .pets_in_zoo_slider{
+        min-width: 900px;
+    }
+    .pay_and_feed_wrapper_wrap{
+        height: 1393px;
+    }
+    .pay_and_feed{
+        height: 1393px;
+    }
+    .pay_and_feed_wrapper{
+        height: 1393px;
+    }
+    .donate{
+        max-width: 538px;
+        height: 32px;
+    }
+    .donate p {
+        margin-top: 0;
+    }
+    .diagram_list{
+        height: 935px;
+        max-width: 245px;
+        margin: 0 auto;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .diagram_arrow{
+        width: 40px;
+        transform: rotate(90deg);
+    }
+    .donate_btn{
+        margin-top: 20px;
+    }
+    .testimonials{
+        overflow: hidden;
+        max-height: 795px;
+    }
+    .testimonials_list{
+        width: 1600px;
+    }
+    .testimonials_item_slide{
+        width: 1300px;
+    }
+    .testimonials_item{
+        width: 585px;
+        margin: 0 33px 0 28px;
+    }
+    .testimonials_item p{
+        margin-bottom: 106px;
+    }
+    .testimonials_item_arrow{
+        display: none;
+    }
+    
+    .testimonials_header{
+        margin-bottom: 5px;
+    }
+    .block_map{
+        max-height: 666px;
+    }
+    .map_and_animals{
+        max-width: 600px;
+
+        max-height: 290px;
+    }
+    .map_img{
+        max-width: 600px;
+        max-height: 290px;
+    }
+    #map_panda{
+        top: 150px;
+        left: 10px;
+     }
+     #map_eagle{
+        top: 150px;
+        left: 10px;;
+     }
+     #map_crocodile{
+        top: 150px;
+        left: 10px;
+         
+     }
+     #map_monkey{
+        top: 150px;
+        left: 10px;
+     }
+    #panda_map{
+        left: 69%;
+        top: 4.14%;
+    }
+     #eagle_map{
+       left: 6.67%;
+       top: 2.41%;
+    }
+     #crocodile_map{
+       left: 15%;
+       top: 5.52%;
+    }
+    #monkey_map{
+        left: 42.5%;
+       top: 23.79%;
+     }
+    .map_btn{
+        margin-bottom: 80px;
+     }
+    
+
+}
+
+@media (max-width:620px){
+    .block_map,
+    .testimonials,
+    .pay_and_feed,
+    .pets_in_zoo,
+    .inspiring_us,
+    .first_screen,
+    .how_it_works{
+        max-width: 320px;
+    }
+    .donate{
+        display: none;
+    }
+    .first_screen{
+        max-height: 669px;
+    }
+    .animal_online{
+        width: 300px;
+        max-height: 168px;
+        top: 13.7518%;
+    }
+    .watch_online{
+        top: 41.10%;
+    }
+    .gallery{
+        top: 43.24%;
+        left: 0.9375%;
+    }
+    .slider{
+        max-width: 630px;
+        padding-left: 21px;
+    }
+    .slider_item{
+        width: 113px;
+        height: 164px;
+        padding-top: 0;
+    }
+    .active{
+        width: 140px;
+        height: 202px;
+    }
+    .line{
+        top: 40%;
+        left: 3px;
+    }
+    .input{
+        width: 140px;
+        height: 37px;
+        left: 146px;
+        top: 290px;
+    }
+    .input .span{
+        margin-bottom: -12px;
+    }
+    .gallery_pet_info .pet_about{
+        position: absolute;
+        width: 128px;
+        height: 56px;
+        margin: 0;
+        top: 75px;
+        left: 8px;
+    }
+    .gallery_pet_info p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+     .gallery_pet_info .watch{
+        position: absolute;
+        top: 137px;
+        left: 8px;
+        margin: 0;
+
+    }
+    .gallery_pet_info .pet_donate{
+        position: absolute;
+        top: 167px;
+        left: 8px;
+    }
+    .social_list{
+        display: none;
+    }
+    .animal_online h2{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        color: #FEFEFE;
+
+    }
+    .how_it_works{
+        max-height: 933px;
+    }
+    .works_wrapper{
+        max-width: 300px;
+        overflow: hidden;
+    }
+    
+    #works_header{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .works_header{
+        max-height: 42px;
+        padding-top: 50px;
+    }
+    .watch_online_works{
+        padding-bottom: 50px;
+    }
+    .works_slider_input{
+        margin-top: 20px;
+    }
+    .works{
+        height: 224px;
+    }
+    .works p{
+        margin-bottom: 10px;
+    }
+    .works_slider{
+        max-height: 392px;
+    }
+    .works_slider_img{
+        min-width: 600px;
+    }
+    .inspiring_us{
+        max-height: 719px;
+    }
+    .inspiring_list{
+        max-height: 619px;
+        max-width: 300px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .inspiring_item{
+        max-width: 300px;
+    }
+    .pets_in_zoo_header h3{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        
+    }
+    .pets_online{
+        margin-bottom: 50px;
+    }
+    .pets_in_zoo{
+        max-height: 683px;
+        margin-left: 3.125%;
+        margin-right: 3.125%;
+    }
+    .pay_and_feed_wrapper_wrap{
+        height: 1202px;
+    }
+    .pay_and_feed{
+        height: 1202px;
+    }
+    .pay_and_feed_wrapper{
+        height: 1202px;
+    }
+    .pay_and_feed_header{
+        margin-top: 50px;
+    }
+    .pay_and_feed_header h3{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #333333;
+    }
+    .donate{
+        display: none;
+    }
+    .donate_btn{
+        margin-bottom: 50px;
+    }
+    .testimonials{
+        max-height: 705px;
+    }
+    .testimonials_list{
+        height: 393px;
+    }
+    .testimonials_item{
+        width: 300px;
+        height: 363px;
+        margin: 0 10px 0 10px;
+    }
+    .testimonials_header{
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+    .testimonials_header h3{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #333333;
+        
+    }
+    .testimonials_btn{
+        margin-bottom:50px;
+    }
+    .testimonials_item h4{
+        margin-top: 20px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #333333;
+
+    }
+    .testimonials_item p{
+        width: 90%;
+        margin-bottom: 116px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #4F4F4F;
+    }
+    .block_map{
+        max-height: 413px;
+    }
+    .map_and_animals{
+        max-width: 300px;
+
+        max-height: 146px;
+    }
+    .animal_about img{
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+        margin-top: 16px;
+    }
+    .animal_about{
+        max-height:113px;
+        max-width: 238px;
+    }
+    .about{
+        margin-left:8px ;
+        margin-top: 16px;
+        margin-bottom: 19px;
+    }
+    .map_header{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .map_header h3{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #333333;
+    }
+    .map_btn{
+        margin-bottom: 60px;
+    }
+    .map_img{ 
+        max-width: 300px;
+        max-height: 146px;
+    }
+    #map_panda{
+        left: 10%;
+        top: 23.333%;
+     }
+     #map_eagle{
+        left: 10%;
+        top: 23.333%;
+     }
+     #map_crocodile{
+        left: 10%;
+        top: 23.333%;
+         
+     }
+     #map_monkey{
+        left: 10%;
+        top: 23.333%;
+     }
+    #panda_map{
+        background-size: 22px 22px;
+        left: 72%;
+        top: 5.48%;;
+    }
+     #eagle_map{
+        background-size: 22px 22px;
+        left: 8.33%;
+        top: 1.37%;
+    }
+     #crocodile_map{
+        background-size: 22px 22px;
+        left: 17.33%;
+        top: 6.85%;
+    }
+    #monkey_map{
+        background-size: 22px 22px;
+        left: 46.46%;
+        top: 28.77%;
+     }
+    .animal_img{
+        width: 34px;
+        height: 47px;
+    }
+    
+}
