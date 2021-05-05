@@ -183,7 +183,9 @@ ul{
     color: var(--color-header);
 }
 
-
+.pets_arrow_item{
+    cursor: pointer;
+}
 .map{
     width: 1200px;
     height: 498px;
