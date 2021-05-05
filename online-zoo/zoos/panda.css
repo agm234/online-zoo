@@ -2,13 +2,27 @@
     padding:0;
     margin: 0;
 }
+html{
+    --bg:#fcfcfc;
+    --color-text:#4F4F4F;
+    --color-header:#333333;
+    --arrow-color:#333333;
+}
+html[data-theme='dark']{
+    --bg:#4F4F4F;
+    --color-text:#F2F2F2;
+    --color-header:#fcfcfc;
+    --arrow-color:#fcfcfc;
+}
 main{
     background-size: cover;
+    background-color: var(--bg);
 }
 .main_wrapper_wrap{
     max-width: 1920px;
     height: 910px;
     margin: 0 auto;
+    background-color: var(--bg);
 }
 .wrapper_header{
     box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
@@ -76,6 +90,7 @@ main{
 .arroy_img{
     width: 23px;
     height: 23px;
+    fill: var(--arrow-color);
 }
 .arroy_img:hover{
     cursor: pointer;
@@ -94,6 +109,7 @@ main{
     justify-content: space-between;
     width: 790px;
     height: 654px;
+    overflow: hidden;
 }
 .main_info{
     width: 380px;
@@ -107,7 +123,7 @@ main{
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #4F4F4F;
+    color: var(--color-text);
 
 }
 .main_info h4{
@@ -116,7 +132,7 @@ main{
     font-weight: 900;
     font-size: 20px;
     line-height: 23px;
-    color: #333333;
+    color: var(--color-header);
     margin-bottom: 7px;
 }
 .info_wrapper{
@@ -141,7 +157,7 @@ main{
     font-weight: 900;
     font-size: 48px;
     line-height: 56px;
-    color: #333333;
+    color: var(--color-header);
 }
 .zoo_info{
     display: flex;
@@ -166,12 +182,14 @@ button:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 1887px;
+
     height: 141px;
 }
 .previe{
     width: 246px;
     height: 141px;
+    cursor: pointer;
 }
 .if_video{
     width: 100%;
@@ -211,7 +229,7 @@ button:focus {
 
 
 
-@media(max-width:1650px){
+/* @media(max-width:1650px){
     .video{
         width: 516px;
         height: 500px;
@@ -230,8 +248,8 @@ button:focus {
         height: 260px;
 
     }
-}
-@media(max-width:1200px){
+} */
+@media(max-width:1650px){
     .main_wrapper_wrap{
         max-width: 1200px;
         height: 715px;
@@ -287,6 +305,7 @@ button:focus {
         margin-bottom: 20px;
     }
     .slide{
+        width: 1253px;
         height: 94px;
     }
     .dots{
@@ -301,6 +320,9 @@ button:focus {
     }
     .sider_pets{
         height:330px;
+    }
+    .slide{
+        width: 1181px;
     }
     .slider_list{
         max-width: 103px;
@@ -417,7 +439,7 @@ button:focus {
         font-size: 24px;
         line-height: 28px;
         text-align: center;
-        color: #333333;
+        color: var(--color-header);
     }
     .zoo_info{
         flex-direction: column;
@@ -434,15 +456,19 @@ button:focus {
         width: 98px;
         height: 56px;
     }
+    .previe_wrapper{
+        width: 98px;
+        height: 56px;
+    }
     .slide{
-        width: 205px;
+        width: 633px;
         height: 56px;
     }
     .video{
         width: 205px;
         height: 213px;
     }
-    .previe:first-child{
+    .previe_wrapper:first-child{
         display: none;
     }
     .info_wrapper{
@@ -456,7 +482,7 @@ button:focus {
         font-weight: 900;
         font-size: 14px;
         line-height: 16px;
-        color: #333333;
+        color: var(--color-header);
 
     }
     .info_wrapper p{
@@ -465,7 +491,7 @@ button:focus {
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
-        color: #4F4F4F;
+        color: var(--color-text);
 
     }
     .main_info{

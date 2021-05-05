@@ -32,7 +32,7 @@
                         </li>
 
                         <li class="nav_item" id="map">
-                            <a class="nav_link" href="../map.html">Map</a>
+                            <a class="nav_link" href="../map/map.html">Map</a>
                         </li>
 
                         <li class="nav_item">
@@ -51,7 +51,7 @@
             </section>
             <section class="mode">
                 <div class="swith">
-                    <input type="checkbox">
+                    <input type="checkbox" id="theme">
                     <span class="slider round"></span>
                 </div>
             </section>
@@ -62,29 +62,34 @@
             <div class="main_wrapper">
                 <aside class="sidebar">
                     <ul class="slider_list">
-                        <li class="slider_item">
-                            <img class="arroy_img" src="img/arrow-down-sign-to-navigate 2.png" alt="arrow">
+                        <li class="arrow_item up">
+                            <svg class="arroy_img" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="arroy_img"
+                                    d="M11.5001 4.94404C11.9123 4.94404 12.3244 5.10143 12.6387 5.41555L22.5282 15.3051C23.1573 15.9342 23.1573 16.9542 22.5282 17.5831C21.8993 18.2119 20.8796 18.2119 20.2504 17.5831L11.5001 8.8322L2.74967 17.5827C2.12057 18.2116 1.1009 18.2116 0.472107 17.5827C-0.157299 16.9539 -0.157299 15.9339 0.472107 15.3048L10.3614 5.41524C10.6759 5.10107 11.088 4.94404 11.5001 4.94404Z"
+                                    fill="#828282" />
+                            </svg>
                         </li>
                         <div class="sider_pets">
-                            <li class="slider_item " title="Панда">
-                                <img class="slider_img" id="panda" src="../DESKTOP/IntermediatePage/Ellipse 46panda.png"
+                            <li class="slider_item " title="Панда" data-name="panda">
+                                <img class="slider_img" src="../DESKTOP/IntermediatePage/Ellipse 46panda.png"
                                     alt="panda">
                                 <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png"
                                     alt="gradient">
                             </li>
-                            <li class="slider_item " title="Орел">
+                            <li class="slider_item" title="Орел" data-name="eagle">
                                 <img class="slider_img" src="../DESKTOP/IntermediatePage/Ellipse 55eagle.png"
                                     alt="eagle">
                                 <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png"
                                     alt="gradient">
                             </li>
-                            <li class="slider_item pet_active" title="Аллигатор">
+                            <li class="slider_item pet_active" title="Крокодил" data-name="crocodile">
                                 <img class="slider_img" src="../DESKTOP/IntermediatePage/Ellipse 58crocodile.png"
                                     alt="crocodile">
                                 <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png"
                                     alt="gradient">
                             </li>
-                            <li class="slider_item" title="Горилла">
+                            <li class="slider_item" title="Горилла" data-name="gorilla">
                                 <img class="slider_img" src="../DESKTOP/IntermediatePage/Ellipse 53monkey.png"
                                     alt="monkey">
                                 <img class="gradient" src="../DESKTOP/IntermediatePage/Ellipse_gradient.png"
@@ -92,8 +97,13 @@
                             </li>
 
                         </div>
-                        <li class="slider_item">
-                            <img class="arroy_img" src="img/arrow-down-sign-to-navigate 1.png" alt="arrow">
+                        <li class="arrow_item down">
+                            <svg class="arroy_img" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="arroy_img"
+                                    d="M11.4999 18.056C11.0877 18.056 10.6756 17.8986 10.3613 17.5845L0.471825 7.69487C-0.157275 7.06577 -0.157275 6.04579 0.471825 5.41695C1.10067 4.7881 2.12045 4.7881 2.7496 5.41695L11.4999 14.1678L20.2503 5.41725C20.8794 4.78841 21.8991 4.78841 22.5279 5.41725C23.1573 6.0461 23.1573 7.06608 22.5279 7.69518L12.6386 17.5848C12.3241 17.8989 11.912 18.056 11.4999 18.056Z"
+                                    fill="#333333" />
+                            </svg>
                         </li>
                     </ul>
                 </aside>
@@ -103,14 +113,32 @@
                     </div>
                     <div class="zoo_info">
                         <section class="video">
-                            <iframe width="790" height="442" src="https://www.youtube.com/embed/EnxRJii_dp8"
+                            <iframe class="if_video" src="https://www.youtube.com/embed/EnxRJii_dp8"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <div class="slide">
-                                <img class="previe" src="img/previe_aligator.jpg">
-                                <img class="previe" src="img/previe_aligator.jpg">
-                                <img class="previe" src="img/previe_aligator.jpg">
+                                <div class="previe_wrapper">
+                                    <img class="previe" src="https://img.youtube.com/vi/gb99Y3cjw1c/mqdefault.jpg">
+                                </div>
+                                <div class="previe_wrapper">
+                                    <img class="previe" src="https://img.youtube.com/vi/_bVZeOt7bCw/mqdefault.jpg">
+                                </div>
+                                <div class="previe_wrapper">
+                                    <img class="previe" src="https://img.youtube.com/vi/Vqzg8JakhjI/mqdefault.jpg">
+                                </div>
+                                <div class="previe_wrapper">
+                                    <img class="previe" src="https://img.youtube.com/vi/sO0D7N5JNh8/mqdefault.jpg">
+                                </div>
+                                <div class="previe_wrapper">
+                                    <img class="previe" src="https://img.youtube.com/vi/npi99Y-MkN0/mqdefault.jpg">
+                                </div>
+                                <div class="previe_wrapper">
+                                    <img class="previe" src="https://img.youtube.com/vi/eIAG852keFA/mqdefault.jpg">
+                                </div>
+                                <div class="previe_wrapper">
+                                    <img class="previe" src="https://img.youtube.com/vi/GfQhi08cpCM/mqdefault.jpg">
+                                </div>
                             </div>
                             <div class="dots">
                                 <span class="dot" id="dot_active"></span>
@@ -137,7 +165,7 @@
                                 </div>
                             </div>
                             <div class="feed_btn">
-                                <button class="button">feed</button>
+                                <button class="button butt">feed</button>
                             </div>
                         </section>
                     </div>
@@ -170,7 +198,7 @@
                         </ul>
                     </div>
                     <div class="footer_btn">
-                        <button class="button">donate for volunteers</button>
+                        <button class="button butt">donate for volunteers</button>
                     </div>
                 </section>
                 <section class="main">
@@ -252,7 +280,8 @@
             </div>
         </footer>
     </div>
-
+    <script src="../dark_theme.js"></script>
+    <script src="zoos.js"></script>
 </body>
 
 </html>

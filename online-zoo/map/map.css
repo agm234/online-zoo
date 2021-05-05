@@ -2,6 +2,22 @@
     padding:0;
     margin: 0;
 }
+html{
+    --bg:#fcfcfc;
+    --color-text:#4F4F4F;
+    --color-header:#333333;
+    --arrow-color:#333333;
+    --map-black:#333333;
+    --map-white:#dadada;
+}
+html[data-theme='dark']{
+    --bg:#4F4F4F;
+    --color-text:#F2F2F2;
+    --color-header:#fcfcfc;
+    --arrow-color:#fcfcfc;
+    --map-black:#dadada;
+    --map-white:#333333;
+}
 body{
     margin: 0;
     padding: 0;
@@ -9,6 +25,7 @@ body{
 main{
     background-size: cover;
     height: 1287px;
+    background-color: var(--bg);
     
 }
 .main_wrapper{
@@ -16,6 +33,7 @@ main{
     flex-direction: column;
     width: 100%;
     height: 100%;
+    
 }
 .main_header{
     width: 720px;
@@ -33,7 +51,7 @@ h3{
     font-size: 48px;
     line-height: 56px;
     text-align: center;
-    color: #333333;
+    color: var(--color-header);
 }
 .main_text{
     width: 790px;
@@ -48,7 +66,7 @@ h3{
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #4F4F4F;
+    color: var(--color-text);
 }
 ul{
     list-style-type: none;
@@ -77,6 +95,9 @@ ul{
 .pets_slider_item:hover{
     cursor: pointer;
 }
+.arroy_img{
+    fill: var(--arrow-color);
+}
 .gradient{
     position:absolute;
     top: -23px;
@@ -99,6 +120,7 @@ ul{
     transform: scale(1.28);
     
 }
+
 .pets_sider_pets{
     width: 1073px;
     height: 157px;
@@ -106,6 +128,7 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    -webkit-user-select: none;
 }
 .pets_input{
     display: block;
@@ -131,7 +154,7 @@ ul{
 .pets_input input[type=range]::-webkit-slider-thumb {
     height: 10px;
     width: 30px;
-    background: #333333;
+    background: var(--color-header);
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -3px;
@@ -148,6 +171,7 @@ ul{
     font-size: 14px;
     line-height: 16px;
     color: #828282;
+    -webkit-user-select: none;
 
 }
 .dots_pets{
@@ -156,7 +180,7 @@ ul{
     font-weight: 900;
     font-size: 24px;
     line-height: 28px;
-    color: #333333;
+    color: var(--color-header);
 }
 
 
@@ -171,6 +195,13 @@ ul{
 .map_img{
     width: 100%;
     height: 100%;
+}
+.map_img path{
+    fill: var(--map-black)
+}
+#map_dadada{
+    fill: var(--map-white) ;
+    stroke: #fcfcfc;
 }
 .animal_img{
     position: absolute;
@@ -315,6 +346,7 @@ button:focus {
     }
     .pets_sider_pets_wrapper{
         max-width: 659px;
+        padding-left: 25px;
         overflow: hidden;
     }
     .pets_sider_pets{
@@ -456,7 +488,7 @@ button:focus {
         font-size: 24px;
         line-height: 28px;
         text-align: center;
-        color: #333333;
+        color: var(--color-header);
 
     }
     .main_text{
@@ -470,7 +502,7 @@ button:focus {
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
-        color: #4F4F4F;
+        color: var(--color-text);
     }
     .slider{
         max-width: 280px; 
