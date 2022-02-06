@@ -109,7 +109,7 @@ function rightPets() {
         let activeSlide = document.querySelector('.pets_item_active');
         activeSlide.classList.remove('pets_item_active');
         sliderItemsPets[currSlidePets].classList.add('pets_item_active');
-        if (currSlidePets >= 4) {
+        if (currSlidePets >= parseInt(document.querySelector('.pets_in_zoo_slider').clientWidth/slideWidthPets)) {
             offsetPets = slideWidthPets + intervalPets;
             document.querySelector('.pet_wrapper_pet').scrollBy(offsetPets, 0);
         }
@@ -130,7 +130,7 @@ function rightPets() {
     setTimeout(() => {
         arrowRight.disabled = false;
         rangePets.disabled = false;
-    }, 300);
+    }, 500);
 
 }
 function leftPets() {
@@ -142,7 +142,7 @@ function leftPets() {
         let activeSlide = document.querySelector('.pets_item_active');
         activeSlide.classList.remove('pets_item_active');
         sliderItemsPets[currSlidePets].classList.add('pets_item_active');
-        if (currSlidePets < 4) {
+        if (currSlidePets >= (parseInt(document.querySelector('.pets_in_zoo_slider').clientWidth/slideWidthPets)-1)) {
             offsetPets = slideWidthPets + intervalPets;
             document.querySelector('.pet_wrapper_pet').scrollBy(-offsetPets, 0);
         }
@@ -163,7 +163,7 @@ function leftPets() {
     setTimeout(() => {
         rangePets.disabled = false;
         arrowLeft.disabled = false;
-    }, 300);
+    }, 500);
 
 }
 
@@ -173,17 +173,94 @@ arrowLeft.addEventListener('click', leftPets);
 
 function rangePet() {
     let mass = [];
-    mass.push(`${newvalue}`);
+    let target = document.getElementById('pets');
+    mass.push(`${target.innerHTML[1]}`);
     newvalue = rangePets.value;
     mass.push(newvalue);
-    if (mass[1] > mass[0]) {
+    if (mass[1] >= mass[0]) {
         rightPets();
     }
     if (mass[1] < mass[0]) {
         leftPets();
     }
-    let target = document.getElementById('pets');
+    
     target.innerHTML = '0' + newvalue + '/';
 }
 rangePets.addEventListener('input', rangePet);
 
+////////////////////////////////// how it works /////////////////////
+let worksInput = document.getElementById('slider_works_rang');
+let worksImgLengh=document.querySelector('.works_slider_img').clientWidth;
+function rangeWorks() {
+    let mass = [];
+    let target = document.getElementById('works');
+    mass.push(`${target.innerHTML[1]}`);
+    newvalue = worksInput.value;
+    mass.push(newvalue);
+    if (mass[1] >= mass[0]) {
+        let multiplier=Math.abs(mass[1]-mass[0])
+        if(multiplier===0) multiplier=1;
+        document.querySelector('.works_slider_wrapper_slides').scrollBy(worksImgLengh*multiplier, 0);
+    }
+    if (mass[1] < mass[0]) {
+        let multiplier=Math.abs(mass[1]-mass[0])
+         if(multiplier===0) multiplier=1;
+        document.querySelector('.works_slider_wrapper_slides').scrollBy(-worksImgLengh*multiplier, 0);
+    }
+    
+    target.innerHTML = '0' + newvalue + '/';
+}
+worksInput.addEventListener('input', rangeWorks);
+////////////////////////////////// testimonials /////////////////////
+let testimonialsInput = document.getElementById('slider_testimonials');
+let testimonialsLengh=document.querySelector('.testimonials_item').clientWidth;
+let testimonialsItems=document.querySelectorAll('.testimonials_item');
+let testiLeft=document.getElementById("testiLeft");
+let testiRight=document.getElementById("testiRight");
+function rangeTestimonials() {
+    let mass = [];
+    let target = document.getElementById('testimonials_input');
+    mass.push(`${target.innerHTML[1]}`);
+    newvalue = testimonialsInput.value;
+    mass.push(newvalue);
+    if (mass[1] > mass[0]) {
+        let multiplier=Math.abs(mass[1]-mass[0])
+        document.querySelector('.testimonials_items_slide').scrollBy((testimonialsLengh)*multiplier, 0);
+    }
+    if (mass[1] < mass[0]) {
+        let multiplier=Math.abs(mass[1]-mass[0])
+        document.querySelector('.testimonials_items_slide').scrollBy(-(testimonialsLengh)*multiplier, 0);
+    }
+    
+    target.innerHTML = '0' + newvalue + '/';
+}
+testimonialsInput.addEventListener('input', rangeTestimonials);
+
+function testimonialsRight(){
+    let target = document.getElementById('testimonials_input');
+    newvalue = Number(testimonialsInput.value)+1;
+    if (newvalue>testimonialsItems.length){
+        document.querySelector('.testimonials_items_slide').scrollBy(-(testimonialsLengh*testimonialsItems.length), 0);   
+        newvalue=1;
+    } else  {
+      
+        document.querySelector('.testimonials_items_slide').scrollBy((testimonialsLengh), 0);
+    }
+
+    target.innerHTML = '0' + newvalue + '/';
+    testimonialsInput.value=newvalue;
+    
+}
+function testimonialsLeft(){
+    let target = document.getElementById('testimonials_input');
+    newvalue = Number(testimonialsInput.value)-1;
+    if (newvalue<1){
+        document.querySelector('.testimonials_items_slide').scrollBy(testimonialsLengh*testimonialsItems.length, 0);   
+        newvalue=testimonialsItems.length;
+    } else  document.querySelector('.testimonials_items_slide').scrollBy((-testimonialsLengh), 0);
+    target.innerHTML = '0' + newvalue + '/';
+    testimonialsInput.value=newvalue
+   
+}
+testiRight.addEventListener('click', testimonialsRight);
+testiLeft.addEventListener('click', testimonialsLeft);

@@ -1,504 +1,450 @@
-*{
-    padding:0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-html{
-    --bg:#fcfcfc;
-    --color-text:#4F4F4F;
-    --color-header:#333333;
-    --arrow-color:#333333;
+html {
+  --bg: #fcfcfc;
+  --color-text: #4f4f4f;
+  --color-header: #333333;
+  --arrow-color: #333333;
 }
-html[data-theme='dark']{
-    --bg:#4F4F4F;
-    --color-text:#F2F2F2;
-    --color-header:#fcfcfc;
-    --arrow-color:#fcfcfc;
+html[data-theme="dark"] {
+  --bg: #4f4f4f;
+  --color-text: #f2f2f2;
+  --color-header: #fcfcfc;
+  --arrow-color: #fcfcfc;
 }
-main{
-    background-size: cover;
-    background-color: var(--bg);
+main {
+  background-size: cover;
+  background-color: var(--bg);
 }
-.main_wrapper_wrap{
-    max-width: 1920px;
-    height: 910px;
-    margin: 0 auto;
-    background-color: var(--bg);
+.main_wrapper_wrap {
+  max-width: 1920px;
+  height: 910px;
+  margin: 0 auto;
+  background-color: var(--bg);
 }
-.wrapper_header{
-    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+.wrapper_header {
+  box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
-.main_wrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    
+.main_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-.sidebar{
-    width: 209px;
-    height: 627px;
-    padding-top: 60px;
-    position: sticky;
-    top: 0;
-    margin-right: 7.8645%;
+.sidebar {
+  width: 209px;
+  height: 627px;
+  padding-top: 60px;
+  position: sticky;
+  top: 0;
+  margin-right: 7.8645%;
 }
-.slider_item{
-    display: flex;
-    align-items: center;
+.slider_item {
+  display: flex;
+  align-items: center;
 }
-.slider_img{
-    width: 108px;
-    height: 108px;
-    position: relative;
+.slider_img {
+  width: 108px;
+  height: 108px;
+  position: relative;
 }
 .pet_active {
-    width: 157px;
-    height: 157px;
+  width: 157px;
+  height: 157px;
 }
-.pet_active .gradient{
-    display: initial;
+.pet_active .gradient {
+  display: initial;
 }
-.pet_active .slider_img{
-    position: absolute;
-    width: 137px;
-    height: 137px;
-    left: 35px;
+.pet_active .slider_img {
+  position: absolute;
+  width: 137px;
+  height: 137px;
+  left: 35px;
 }
-.gradient{
-    width: 157px;
-    height: 157px;
-    position: absolute;
-    left: 25px;
-    display: none;
-    
+.gradient {
+  width: 157px;
+  height: 157px;
+  position: absolute;
+  left: 25px;
+  display: none;
 }
-.slider_list{
-    width: 209px;
-    height: 597px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.slider_list {
+  width: 209px;
+  height: 597px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.sider_pets{
-    width: 100%;
-    height: 511px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.sider_pets {
+  width: 100%;
+  height: 511px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.arroy_img{
-    width: 23px;
-    height: 23px;
-    fill: var(--arrow-color);
+.arroy_img {
+  width: 23px;
+  height: 23px;
+  fill: var(--arrow-color);
 }
-.arroy_img:hover{
-    cursor: pointer;
+.arroy_img:hover {
+  cursor: pointer;
 }
 
-.zoo_wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 1560px;
-    height: 100%px;
-    
+.zoo_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1560px;
+  height: 100%;
 }
-.video{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 790px;
-    height: 654px;
-    overflow: hidden;
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 790px;
+  height: 654px;
+  overflow: hidden;
 }
-.main_info{
-    width: 380px;
-    height: 299px;
-    margin-right: 23%;
+.main_info {
+  width: 380px;
+  height: 299px;
+  margin-right: 23%;
 }
 .main_info p {
-    display: block;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--color-text);
-
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-text);
 }
-.main_info h4{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
-    color: var(--color-header);
-    margin-bottom: 7px;
+.main_info h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--color-header);
+  margin-bottom: 7px;
 }
-.info_wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 209px;
-    margin-bottom: 35px;
+.info_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 209px;
+  margin-bottom: 35px;
 }
-.main_heder{
-    max-width: 883px;
-    height: 56px;
-    margin-top: 60px;
-    margin-bottom: 40px;
+.main_heder {
+  max-width: 883px;
+  height: 56px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
-.main_heder h3{
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 56px;
-    color: var(--color-header);
+.main_heder h3 {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--color-header);
 }
-.zoo_info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1560px;
-    height: 754px;
-
+.zoo_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1560px;
+  height: 754px;
 }
-.feed_btn{
-    width: 194px;
-    height: 55px;
+.feed_btn {
+  width: 194px;
+  height: 55px;
 }
 button:focus {
-    outline: none;
+  outline: none;
 }
-.feed_btn button:hover{
-    cursor: pointer;
-    background: linear-gradient(900.89deg, #0be9aa -14.32%, #07c7d4 892.68%); ;
+.feed_btn button:hover {
+  cursor: pointer;
+  background: linear-gradient(900.89deg, #0be9aa -14.32%, #07c7d4 892.68%);
 }
-.slide{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1887px;
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 
-    height: 141px;
+  height: 141px;
 }
-.previe{
-    width: 246px;
-    height: 141px;
-    cursor: pointer;
+.previe {
+  width: 246px;
+  height: 141px;
+  cursor: pointer;
 }
-.if_video{
+.if_video {
+  width: 100%;
+  height: 75%;
+}
+.dot:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+#dot_active {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+}
+.slider_img {
+  cursor: pointer;
+}
+@media (max-width: 1650px) {
+  .main_wrapper_wrap {
+    max-width: 1200px;
+    height: 715px;
+  }
+  .sidebar {
+    margin-right: 4%;
+  }
+  .sider_pets {
+    height: 442px;
+  }
+  .slider_list {
+    margin: 0;
+    max-width: 151px;
+    height: 528px;
+  }
+  .slider_img {
+    width: 96px;
+    height: 96px;
+  }
+  .pet_active {
+    width: 120px;
+    height: 120px;
+  }
+  .pet_active .slider_img {
+    width: 104px;
+    height: 104px;
+    left: 24px;
+  }
+  .gradient {
+    width: 120px;
+    height: 120px;
+    left: 16px;
+  }
+  .if_video {
+    height: 75%;
+  }
+  .video {
+    width: 527px;
+    height: 459px;
+  }
+  .previe {
+    width: 164px;
+    height: 94px;
+  }
+  .main_info {
+    width: 253px;
+    height: 337px;
+    margin-right: 20%;
+  }
+  .info_wrapper {
+    width: 253px;
+    height: 264px;
+    margin-bottom: 20px;
+  }
+  .slide {
     width: 100%;
-    height: 67.5%;
-}
-.dots{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 37px;
-    height: 11px;
-    align-items: center;
-    margin: 0 auto;
-}
-.dots span{
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #C4C4C4;
-}
-.dot:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    transform: scale(1.2);
-}
-#dot_active{
-    display: block;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
-}
-.slider_img{
-    cursor: pointer;
+    height: 94px;
+  }
 }
 
-
-
-/* @media(max-width:1650px){
-    .video{
-        width: 516px;
-        height: 500px;
-    }
-    .previe{
-        width: 164px;
-        height: 94px;
-    }
-    .feed_btn{
-        width: 184px;
-    }
-    .main_info{
-        height: 330px;
-    }
-    .info_wrapper{
-        height: 260px;
-
-    }
-} */
-@media(max-width:1650px){
-    .main_wrapper_wrap{
-        max-width: 1200px;
-        height: 715px;
-    }
-    .sidebar{
-        margin-right: 4%;
-    }
-    .sider_pets{
-        height: 442px;
-    }
-    .slider_list{
-        margin: 0;
-        max-width: 151px;
-        height: 528px;
-    }
-    .slider_img{
-        width: 96px;
-        height: 96px;
-    }
-    .pet_active{
-        width: 120px;
-        height: 120px;
-    }
-    .pet_active .slider_img{
-        width: 104px;
-        height: 104px;
-        left: 24px;
-    }
-    .gradient{
-        width: 120px;
-        height: 120px;
-        left: 16px;
-    }
-    .if_video{
-        height: 64.7%;
-    }
-    .video{
-        width: 527px;
-        height: 459px;
-    }
-    .previe{
-        width: 164px;
-        height: 94px;
-    }
-    .main_info{
-        width: 253px;
-        height: 337px;
-        margin-right: 20%;
-    }
-    .info_wrapper{
-        width: 253px;
-        height: 264px;
-        margin-bottom: 20px;
-    }
-    .slide{
-        width: 1253px;
-        height: 94px;
-    }
-    .dots{
-        padding-right: 16px;
-    }
+@media (max-width: 1200px) {
+  .main_wrapper_wrap {
+    max-width: 640px;
+    height: 1100px;
+  }
+  .sider_pets {
+    height: 330px;
+  }
+  .slider_list {
+    max-width: 103px;
+    margin: 0;
+    height: 416px;
+  }
+  .slider_img {
+    width: 70px;
+    height: 70px;
+  }
+  .pet_active {
+    width: 90px;
+    height: 90px;
+  }
+  .pet_active .slider_img {
+    width: 78px;
+    height: 78px;
+    left: 13px;
+  }
+  .gradient {
+    width: 90px;
+    height: 90px;
+    left: 7px;
+  }
+  .sidebar {
+    width: 103px;
+    margin-right: 3.125%;
+  }
+  .zoo_info {
+    flex-direction: column;
+    max-width: 497px;
+    height: 751px;
+  }
+  .zoo_wrapper {
+    max-width: 497px;
+  }
+  .if_video {
+    height: 75%;
+  }
+  .previe {
+    width: 155px;
+    height: 89px;
+  }
+  .video {
+    width: 497px;
+    height: 425px;
+  }
+  .main_info {
+    width: 497px;
+    height: 276px;
+  }
+  .info_wrapper {
+    width: 497px;
+    height: 193px;
+    margin-bottom: 30px;
+  }
+  .main_heder {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+  .main_heder h3 {
+    font-size: 42px;
+  }
 }
-
-@media(max-width:970px){
-    .main_wrapper_wrap{
-        max-width: 640px;
-        height: 982px;
-    }
-    .sider_pets{
-        height:330px;
-    }
-    .slide{
-        width: 1181px;
-    }
-    .slider_list{
-        max-width: 103px;
-        margin: 0;
-        height: 416px;
-    }
-    .slider_img{
-        width: 70px;
-        height: 70px;
-    }
-    .pet_active{
-        width: 90px;
-        height: 90px;
-    }
-    .pet_active .slider_img{
-        width: 78px;
-        height: 78px;
-        left: 13px;
-    }
-    .gradient{
-        width: 90px;
-        height: 90px;
-        left: 7px;
-    }
-    .sidebar{
-        width: 103px;
-        margin-right: 3.125%;
-    }
-    .zoo_info{
-        flex-direction: column;
-        max-width: 497px;
-        height: 751px;
-    }
-    .zoo_wrapper{
-        max-width: 497px;
-    }
-    .if_video{
-        height: 65.88%;
-    }
-    .previe{
-        width: 155px;
-        height: 89px;
-    }
-    .video{
-        width: 497px;
-        height: 425px;
-    }
-    .main_info{
-        width: 497px;
-        height: 276px;
-    }
-    .info_wrapper{
-        width: 497px;
-        height: 193px;
-        margin-bottom: 30px;
-    }
-    .main_heder{
-        width: 361px;
-        text-align: center;
-        margin-bottom: 35px;
-    }
-    .dots{
-        padding-right: 8px;
-    }
-}
-@media(max-width:620px){
-    .main_wrapper_wrap{
-        max-width: 320px;
-        height: 684px;
-    }
-    .sider_pets{
-        height: 200px;
-    }
-    .slider_list{
-        max-width: 75px;
-        height: 266px;
-    }
-    .slider_img{
-        width: 40px;
-        height: 40px;
-    }
-    .pet_active{
-        width: 65px;
-        height: 65px;
-    }
-    .pet_active .slider_img{
-        width: 55px;
-        height: 55px;
-        left: 10px;
-    }
-    .gradient{
-        width: 65px;
-        height: 65px;
-        left: 5px;
-    }
-    .sidebar{
-        margin-right: 6.25%;
-        padding-top: 35px;
-    }
-    .zoo_info{
-        max-width: 497px;
-        height: 751px;
-    }
-    .main_heder{
-        width: 184px;
-        height: 28px;
-        margin-top: 35px;
-        margin-bottom: 20px;
-    }
-    .main_heder h3{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 28px;
-        text-align: center;
-        color: var(--color-header);
-    }
-    .zoo_info{
-        flex-direction: column;
-        max-width: 205px;
-        height: 540px;
-    }
-    .zoo_wrapper{
-        max-width: 320px;
-    }
-    .if_video{
-        height: 54.46%;
-    }
-    .previe{
-        width: 98px;
-        height: 56px;
-    }
-    .previe_wrapper{
-        width: 98px;
-        height: 56px;
-    }
-    .slide{
-        width: 633px;
-        height: 56px;
-    }
-    .video{
-        width: 205px;
-        height: 213px;
-    }
-    .previe_wrapper:first-child{
-        display: none;
-    }
-    .info_wrapper{
-        width: 205px;
-        height: 225px;
-        margin-bottom: 20px;
-    }
-    .info_wrapper h4{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 14px;
-        line-height: 16px;
-        color: var(--color-header);
-
-    }
-    .info_wrapper p{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-        color: var(--color-text);
-
-    }
-    .main_info{
-        width: 205px;
-        height: 298px;
-    }
-    .feed_btn{
-        width: 184px;
-    }
+@media (max-width: 640px) {
+  .main_wrapper_wrap {
+    max-width: 320px;
+    height: 684px;
+  }
+  .sider_pets {
+    height: 200px;
+  }
+  .slider_list {
+    max-width: 75px;
+    height: 266px;
+  }
+  .slider_img {
+    width: 40px;
+    height: 40px;
+  }
+  .pet_active {
+    width: 65px;
+    height: 65px;
+  }
+  .pet_active .slider_img {
+    width: 55px;
+    height: 55px;
+    left: 10px;
+  }
+  .gradient {
+    width: 65px;
+    height: 65px;
+    left: 5px;
+  }
+  .sidebar {
+    margin-right: 6.25%;
+    padding-top: 90px;
+    height: 280px;
+  }
+  .zoo_info {
+    max-width: 497px;
+    height: 751px;
+  }
+  .main_heder {
+    height: 28px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .main_heder h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--color-header);
+  }
+  .zoo_info {
+    flex-direction: column;
+    max-width: 205px;
+    height: 540px;
+  }
+  .zoo_wrapper {
+    max-width: 320px;
+  }
+  .if_video {
+    height: 70%;
+  }
+  .previe {
+    width: 98px;
+    height: 56px;
+  }
+  .previe_wrapper {
+    width: 98px;
+    height: 56px;
+  }
+  .slide {
+    height: 56px;
+  }
+  .video {
+    width: 205px;
+    height: 213px;
+  }
+  .previe_wrapper:first-child {
+    display: none;
+  }
+  .info_wrapper {
+    width: 205px;
+    height: 225px;
+    margin-bottom: 20px;
+  }
+  .info_wrapper h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-header);
+  }
+  .info_wrapper p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-text);
+  }
+  .main_info {
+    width: 205px;
+    height: 298px;
+  }
+  .feed_btn {
+    width: 184px;
+  }
 }

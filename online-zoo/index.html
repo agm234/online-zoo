@@ -286,10 +286,17 @@
                         </p>
                     </section>
                     <section class="works_slider">
-                        <img class="works_slider_img" src="DESKTOP/main/slide_works/Rectangle 36.png" alt="slide">
+                        <div class="works_slider_wrapper_slides">
+                            <div class="works_slider_wrapper">
+                                <img class="works_slider_img" src="DESKTOP/main/slide_works/Rectangle 36.png" alt="slide">
+                                <img class="works_slider_img" src="DESKTOP/main/slide_works/animal2.png" alt="slide">
+                                <img class="works_slider_img" src="DESKTOP/main/slide_works/animal3.png" alt="slide">
+                                <img class="works_slider_img" src="DESKTOP/main/slide_works/animal4.png" alt="slide">
+                            </div>
+                        </div>
                         <label class="works_slider_input" for='slider_works_rang'>
                             <div class="span">
-                                <span class="dots_pets_first"><span class="dots_pets">01/</span>04</span>
+                                <span class="dots_pets_first"><span class="dots_pets" id="works">01/</span>04</span>
                             </div>
                             <input type="range" min='01' max='04' step="1" value="01" id='slider_works_rang'>
                         </label>
@@ -662,7 +669,7 @@
                     </section>
                     <section class="testimonials_slider">
                         <ul class="testimonials_list">
-                            <li class="testimonials_item_arrow">
+                            <li class="testimonials_item_arrow" id="testiLeft">
                                 <svg class="testimonials_arrow_img" width="30" height="30" viewBox="0 0 30 30"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="testimonials_arrow_img"
@@ -670,25 +677,59 @@
                                         fill="#333333" />
                                 </svg>
                             </li>
-                            <div class="testimonials_item_slide">
-                                <li class="testimonials_item">
-                                    <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 46.png"
-                                        alt="nastya">
-                                    <h4>Nastya Sidorova</h4>
-                                    <p>As a voice for wildlife, we are devastated by the impact of the 2020
-                                        Australian bushfires on precious species and their habitat.
-                                    </p>
-                                </li>
-                                <li class="testimonials_item">
-                                    <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 462.png"
-                                        alt="vlad">
-                                    <h4>Vlad Kim</h4>
-                                    <p>As a voice for wildlife, we are devastated by the impact of the 2020
-                                        Australian bushfires on precious species and their habitat.
-                                    </p>
-                                </li>
+                            <div class="testimonials_items_slide">
+                                <div class="testimonials_item_slide">
+                                    <li class="testimonials_item">
+                                        <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 46.png"
+                                            alt="nastya">
+                                        <h4>Nastya Sidorova</h4>
+                                        <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                            Australian bushfires on precious species and their habitat.
+                                        </p>
+                                    </li>
+                                    <li class="testimonials_item">
+                                        <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 462.png"
+                                            alt="vlad">
+                                        <h4>Vlad Kim</h4>
+                                        <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                            Australian bushfires on precious species and their habitat.
+                                        </p>
+                                    </li>
+                                    <li class="testimonials_item">
+                                        <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 46.png"
+                                            alt="nastya">
+                                        <h4>Nastya Sidorova</h4>
+                                        <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                            Australian bushfires on precious species and their habitat.
+                                        </p>
+                                    </li>
+                                    <li class="testimonials_item">
+                                        <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 462.png"
+                                            alt="vlad">
+                                        <h4>Vlad Kim</h4>
+                                        <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                            Australian bushfires on precious species and their habitat.
+                                        </p>
+                                    </li>
+                                    <li class="testimonials_item">
+                                        <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 46.png"
+                                            alt="nastya">
+                                        <h4>Nastya Sidorova</h4>
+                                        <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                            Australian bushfires on precious species and their habitat.
+                                        </p>
+                                    </li>
+                                    <li class="testimonials_item">
+                                        <img class="testimonials_img" src="DESKTOP/main/testimonials_slider/Ellipse 462.png"
+                                            alt="vlad">
+                                        <h4>Vlad Kim</h4>
+                                        <p>As a voice for wildlife, we are devastated by the impact of the 2020
+                                            Australian bushfires on precious species and their habitat.
+                                        </p>
+                                    </li>
+                                </div>
                             </div>
-                            <li class="testimonials_item_arrow">
+                            <li class="testimonials_item_arrow" id="testiRight">
                                 <svg class="testimonials_arrow_img" width="30" height="30" viewBox="0 0 30 30"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="testimonials_arrow_img"
@@ -701,9 +742,9 @@
                     <section class="testimonials_input">
                         <label class="input_testimonials" for='slider_testimonials'>
                             <div class="span">
-                                <span class="dots_pets_first"><span class="dots_pets">01/</span>08</span>
+                                <span class="dots_pets_first"><span class="dots_pets" id="testimonials_input">01/</span>06</span>
                             </div>
-                            <input type="range" min='01' max='08' step="1" value="01" id='slider_testimonials'>
+                            <input type="range" min='01' max='06' step="1" value="01" id='slider_testimonials'>
                         </label>
                     </section>
                     <section class="testimonials_btn">
